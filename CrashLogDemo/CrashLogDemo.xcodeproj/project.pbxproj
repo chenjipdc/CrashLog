@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		237158B01EE00FA000BA9384 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158AF1EE00FA000BA9384 /* main.m */; };
+		237158B31EE00FA000BA9384 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158B21EE00FA000BA9384 /* AppDelegate.m */; };
+		237158B61EE00FA000BA9384 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158B51EE00FA000BA9384 /* ViewController.m */; };
+		237158B91EE00FA000BA9384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237158B71EE00FA000BA9384 /* Main.storyboard */; };
+		237158BB1EE00FA000BA9384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237158BA1EE00FA000BA9384 /* Assets.xcassets */; };
+		237158BE1EE00FA000BA9384 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237158BC1EE00FA000BA9384 /* LaunchScreen.storyboard */; };
+		237158C91EE00FA000BA9384 /* CrashLogDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158C81EE00FA000BA9384 /* CrashLogDemoTests.m */; };
+		237158D41EE00FA000BA9384 /* CrashLogDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158D31EE00FA000BA9384 /* CrashLogDemoUITests.m */; };
+		237158FD1EE0100700BA9384 /* RSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158E31EE0100700BA9384 /* RSBaseViewController.m */; };
+		237158FE1EE0100700BA9384 /* RSCrashClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158E61EE0100700BA9384 /* RSCrashClickViewController.m */; };
+		237158FF1EE0100700BA9384 /* RSCrashCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158E81EE0100700BA9384 /* RSCrashCollector.m */; };
+		237159001EE0100700BA9384 /* RSCrashContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158EA1EE0100700BA9384 /* RSCrashContainerViewController.m */; };
+		237159011EE0100700BA9384 /* RSCrashDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158EC1EE0100700BA9384 /* RSCrashDB.m */; };
+		237159021EE0100700BA9384 /* RSCrashLogTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158EE1EE0100700BA9384 /* RSCrashLogTimeViewController.m */; };
+		237159031EE0100700BA9384 /* RSCrashLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158F01EE0100700BA9384 /* RSCrashLogViewController.m */; };
+		237159041EE0100700BA9384 /* RSCrashProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158F21EE0100700BA9384 /* RSCrashProfiler.m */; };
+		237159051EE0100700BA9384 /* RSCrashRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158F41EE0100700BA9384 /* RSCrashRead.m */; };
+		237159061EE0100700BA9384 /* RSCrashShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158F61EE0100700BA9384 /* RSCrashShowViewController.m */; };
+		237159071EE0100700BA9384 /* RSCrashStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158F81EE0100700BA9384 /* RSCrashStorage.m */; };
+		237159081EE0100700BA9384 /* RSCrashWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158FA1EE0100700BA9384 /* RSCrashWindow.m */; };
+		237159091EE0100700BA9384 /* RSTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158FC1EE0100700BA9384 /* RSTableModel.m */; };
+		9BB801EA07C375BBC8ABE8D0 /* libPods-CrashLogDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 054625CDA269D4460E727995 /* libPods-CrashLogDemo.a */; };
+		AABC1EB286D15DC287E59E20 /* libPods-CrashLogDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D01EC289B773754FDD46C5 /* libPods-CrashLogDemoUITests.a */; };
+		B44839073DC5D2738D053F88 /* libPods-CrashLogDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5478FA736C802DB3B6858D4 /* libPods-CrashLogDemoTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		237158C51EE00FA000BA9384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 237158A31EE00FA000BA9384 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 237158AA1EE00FA000BA9384;
+			remoteInfo = CrashLogDemo;
+		};
+		237158D01EE00FA000BA9384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 237158A31EE00FA000BA9384 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 237158AA1EE00FA000BA9384;
+			remoteInfo = CrashLogDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		054625CDA269D4460E727995 /* libPods-CrashLogDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashLogDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5AC5D2735E066B8DEB0107 /* Pods-CrashLogDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashLogDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrashLogDemoUITests/Pods-CrashLogDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0DBE7D6950BB92599D1E89A9 /* Pods-CrashLogDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashLogDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrashLogDemo/Pods-CrashLogDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		10B9CDEC1C6759C6DD8F6E80 /* Pods-CrashLogDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashLogDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrashLogDemo/Pods-CrashLogDemo.release.xcconfig"; sourceTree = "<group>"; };
+		237158AB1EE00FA000BA9384 /* CrashLogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrashLogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		237158AF1EE00FA000BA9384 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		237158B11EE00FA000BA9384 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		237158B21EE00FA000BA9384 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		237158B41EE00FA000BA9384 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		237158B51EE00FA000BA9384 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		237158B81EE00FA000BA9384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		237158BA1EE00FA000BA9384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		237158BD1EE00FA000BA9384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		237158BF1EE00FA000BA9384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		237158C41EE00FA000BA9384 /* CrashLogDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashLogDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		237158C81EE00FA000BA9384 /* CrashLogDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashLogDemoTests.m; sourceTree = "<group>"; };
+		237158CA1EE00FA000BA9384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		237158CF1EE00FA000BA9384 /* CrashLogDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashLogDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		237158D31EE00FA000BA9384 /* CrashLogDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashLogDemoUITests.m; sourceTree = "<group>"; };
+		237158D51EE00FA000BA9384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		237158E21EE0100700BA9384 /* RSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSBaseViewController.h; sourceTree = "<group>"; };
+		237158E31EE0100700BA9384 /* RSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSBaseViewController.m; sourceTree = "<group>"; };
+		237158E41EE0100700BA9384 /* RSCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrash.h; sourceTree = "<group>"; };
+		237158E51EE0100700BA9384 /* RSCrashClickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashClickViewController.h; sourceTree = "<group>"; };
+		237158E61EE0100700BA9384 /* RSCrashClickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashClickViewController.m; sourceTree = "<group>"; };
+		237158E71EE0100700BA9384 /* RSCrashCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashCollector.h; sourceTree = "<group>"; };
+		237158E81EE0100700BA9384 /* RSCrashCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashCollector.m; sourceTree = "<group>"; };
+		237158E91EE0100700BA9384 /* RSCrashContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashContainerViewController.h; sourceTree = "<group>"; };
+		237158EA1EE0100700BA9384 /* RSCrashContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashContainerViewController.m; sourceTree = "<group>"; };
+		237158EB1EE0100700BA9384 /* RSCrashDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashDB.h; sourceTree = "<group>"; };
+		237158EC1EE0100700BA9384 /* RSCrashDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashDB.m; sourceTree = "<group>"; };
+		237158ED1EE0100700BA9384 /* RSCrashLogTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashLogTimeViewController.h; sourceTree = "<group>"; };
+		237158EE1EE0100700BA9384 /* RSCrashLogTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashLogTimeViewController.m; sourceTree = "<group>"; };
+		237158EF1EE0100700BA9384 /* RSCrashLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashLogViewController.h; sourceTree = "<group>"; };
+		237158F01EE0100700BA9384 /* RSCrashLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashLogViewController.m; sourceTree = "<group>"; };
+		237158F11EE0100700BA9384 /* RSCrashProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashProfiler.h; sourceTree = "<group>"; };
+		237158F21EE0100700BA9384 /* RSCrashProfiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashProfiler.m; sourceTree = "<group>"; };
+		237158F31EE0100700BA9384 /* RSCrashRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashRead.h; sourceTree = "<group>"; };
+		237158F41EE0100700BA9384 /* RSCrashRead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashRead.m; sourceTree = "<group>"; };
+		237158F51EE0100700BA9384 /* RSCrashShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashShowViewController.h; sourceTree = "<group>"; };
+		237158F61EE0100700BA9384 /* RSCrashShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashShowViewController.m; sourceTree = "<group>"; };
+		237158F71EE0100700BA9384 /* RSCrashStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashStorage.h; sourceTree = "<group>"; };
+		237158F81EE0100700BA9384 /* RSCrashStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashStorage.m; sourceTree = "<group>"; };
+		237158F91EE0100700BA9384 /* RSCrashWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashWindow.h; sourceTree = "<group>"; };
+		237158FA1EE0100700BA9384 /* RSCrashWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashWindow.m; sourceTree = "<group>"; };
+		237158FB1EE0100700BA9384 /* RSTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTableModel.h; sourceTree = "<group>"; };
+		237158FC1EE0100700BA9384 /* RSTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTableModel.m; sourceTree = "<group>"; };
+		31D01EC289B773754FDD46C5 /* libPods-CrashLogDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashLogDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE10160FEE521B1B357284C /* Pods-CrashLogDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashLogDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrashLogDemoUITests/Pods-CrashLogDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEA3F82CEAA3DAC45FC40820 /* Pods-CrashLogDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashLogDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrashLogDemoTests/Pods-CrashLogDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5478FA736C802DB3B6858D4 /* libPods-CrashLogDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashLogDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0858D48CD5926C02852C2BC /* Pods-CrashLogDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashLogDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrashLogDemoTests/Pods-CrashLogDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		237158A81EE00FA000BA9384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB801EA07C375BBC8ABE8D0 /* libPods-CrashLogDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237158C11EE00FA000BA9384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44839073DC5D2738D053F88 /* libPods-CrashLogDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237158CC1EE00FA000BA9384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABC1EB286D15DC287E59E20 /* libPods-CrashLogDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21A97C6243558687C918091F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				054625CDA269D4460E727995 /* libPods-CrashLogDemo.a */,
+				B5478FA736C802DB3B6858D4 /* libPods-CrashLogDemoTests.a */,
+				31D01EC289B773754FDD46C5 /* libPods-CrashLogDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		237158A21EE00FA000BA9384 = {
+			isa = PBXGroup;
+			children = (
+				237158AD1EE00FA000BA9384 /* CrashLogDemo */,
+				237158C71EE00FA000BA9384 /* CrashLogDemoTests */,
+				237158D21EE00FA000BA9384 /* CrashLogDemoUITests */,
+				237158AC1EE00FA000BA9384 /* Products */,
+				D5FA30FC7EE8833D2E2056AE /* Pods */,
+				21A97C6243558687C918091F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		237158AC1EE00FA000BA9384 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				237158AB1EE00FA000BA9384 /* CrashLogDemo.app */,
+				237158C41EE00FA000BA9384 /* CrashLogDemoTests.xctest */,
+				237158CF1EE00FA000BA9384 /* CrashLogDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		237158AD1EE00FA000BA9384 /* CrashLogDemo */ = {
+			isa = PBXGroup;
+			children = (
+				237158E11EE0100700BA9384 /* CrashLog */,
+				237158B11EE00FA000BA9384 /* AppDelegate.h */,
+				237158B21EE00FA000BA9384 /* AppDelegate.m */,
+				237158B41EE00FA000BA9384 /* ViewController.h */,
+				237158B51EE00FA000BA9384 /* ViewController.m */,
+				237158B71EE00FA000BA9384 /* Main.storyboard */,
+				237158BA1EE00FA000BA9384 /* Assets.xcassets */,
+				237158BC1EE00FA000BA9384 /* LaunchScreen.storyboard */,
+				237158BF1EE00FA000BA9384 /* Info.plist */,
+				237158AE1EE00FA000BA9384 /* Supporting Files */,
+			);
+			path = CrashLogDemo;
+			sourceTree = "<group>";
+		};
+		237158AE1EE00FA000BA9384 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				237158AF1EE00FA000BA9384 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		237158C71EE00FA000BA9384 /* CrashLogDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				237158C81EE00FA000BA9384 /* CrashLogDemoTests.m */,
+				237158CA1EE00FA000BA9384 /* Info.plist */,
+			);
+			path = CrashLogDemoTests;
+			sourceTree = "<group>";
+		};
+		237158D21EE00FA000BA9384 /* CrashLogDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				237158D31EE00FA000BA9384 /* CrashLogDemoUITests.m */,
+				237158D51EE00FA000BA9384 /* Info.plist */,
+			);
+			path = CrashLogDemoUITests;
+			sourceTree = "<group>";
+		};
+		237158E11EE0100700BA9384 /* CrashLog */ = {
+			isa = PBXGroup;
+			children = (
+				237158E41EE0100700BA9384 /* RSCrash.h */,
+				237158E21EE0100700BA9384 /* RSBaseViewController.h */,
+				237158E31EE0100700BA9384 /* RSBaseViewController.m */,
+				237158E51EE0100700BA9384 /* RSCrashClickViewController.h */,
+				237158E61EE0100700BA9384 /* RSCrashClickViewController.m */,
+				237158E71EE0100700BA9384 /* RSCrashCollector.h */,
+				237158E81EE0100700BA9384 /* RSCrashCollector.m */,
+				237158E91EE0100700BA9384 /* RSCrashContainerViewController.h */,
+				237158EA1EE0100700BA9384 /* RSCrashContainerViewController.m */,
+				237158EB1EE0100700BA9384 /* RSCrashDB.h */,
+				237158EC1EE0100700BA9384 /* RSCrashDB.m */,
+				237158ED1EE0100700BA9384 /* RSCrashLogTimeViewController.h */,
+				237158EE1EE0100700BA9384 /* RSCrashLogTimeViewController.m */,
+				237158EF1EE0100700BA9384 /* RSCrashLogViewController.h */,
+				237158F01EE0100700BA9384 /* RSCrashLogViewController.m */,
+				237158F11EE0100700BA9384 /* RSCrashProfiler.h */,
+				237158F21EE0100700BA9384 /* RSCrashProfiler.m */,
+				237158F31EE0100700BA9384 /* RSCrashRead.h */,
+				237158F41EE0100700BA9384 /* RSCrashRead.m */,
+				237158F51EE0100700BA9384 /* RSCrashShowViewController.h */,
+				237158F61EE0100700BA9384 /* RSCrashShowViewController.m */,
+				237158F71EE0100700BA9384 /* RSCrashStorage.h */,
+				237158F81EE0100700BA9384 /* RSCrashStorage.m */,
+				237158F91EE0100700BA9384 /* RSCrashWindow.h */,
+				237158FA1EE0100700BA9384 /* RSCrashWindow.m */,
+				237158FB1EE0100700BA9384 /* RSTableModel.h */,
+				237158FC1EE0100700BA9384 /* RSTableModel.m */,
+			);
+			path = CrashLog;
+			sourceTree = "<group>";
+		};
+		D5FA30FC7EE8833D2E2056AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DBE7D6950BB92599D1E89A9 /* Pods-CrashLogDemo.debug.xcconfig */,
+				10B9CDEC1C6759C6DD8F6E80 /* Pods-CrashLogDemo.release.xcconfig */,
+				F0858D48CD5926C02852C2BC /* Pods-CrashLogDemoTests.debug.xcconfig */,
+				AEA3F82CEAA3DAC45FC40820 /* Pods-CrashLogDemoTests.release.xcconfig */,
+				AAE10160FEE521B1B357284C /* Pods-CrashLogDemoUITests.debug.xcconfig */,
+				0A5AC5D2735E066B8DEB0107 /* Pods-CrashLogDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		237158AA1EE00FA000BA9384 /* CrashLogDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 237158D81EE00FA000BA9384 /* Build configuration list for PBXNativeTarget "CrashLogDemo" */;
+			buildPhases = (
+				18F10EA27909985A8FC35CFD /* [CP] Check Pods Manifest.lock */,
+				237158A71EE00FA000BA9384 /* Sources */,
+				237158A81EE00FA000BA9384 /* Frameworks */,
+				237158A91EE00FA000BA9384 /* Resources */,
+				D2CAA6F2F521CDF6CCC5D321 /* [CP] Embed Pods Frameworks */,
+				DD99F61EFD820DB6772D859B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrashLogDemo;
+			productName = CrashLogDemo;
+			productReference = 237158AB1EE00FA000BA9384 /* CrashLogDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		237158C31EE00FA000BA9384 /* CrashLogDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 237158DB1EE00FA000BA9384 /* Build configuration list for PBXNativeTarget "CrashLogDemoTests" */;
+			buildPhases = (
+				452250AC9E365640791BFD7C /* [CP] Check Pods Manifest.lock */,
+				237158C01EE00FA000BA9384 /* Sources */,
+				237158C11EE00FA000BA9384 /* Frameworks */,
+				237158C21EE00FA000BA9384 /* Resources */,
+				9650FDD08957F7466FB40E18 /* [CP] Embed Pods Frameworks */,
+				7C49F863CEB0C782C9C1D63E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				237158C61EE00FA000BA9384 /* PBXTargetDependency */,
+			);
+			name = CrashLogDemoTests;
+			productName = CrashLogDemoTests;
+			productReference = 237158C41EE00FA000BA9384 /* CrashLogDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		237158CE1EE00FA000BA9384 /* CrashLogDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 237158DE1EE00FA000BA9384 /* Build configuration list for PBXNativeTarget "CrashLogDemoUITests" */;
+			buildPhases = (
+				9BED0898EE6E0F6A2798BBF6 /* [CP] Check Pods Manifest.lock */,
+				237158CB1EE00FA000BA9384 /* Sources */,
+				237158CC1EE00FA000BA9384 /* Frameworks */,
+				237158CD1EE00FA000BA9384 /* Resources */,
+				5D0E455AC6E0D7A4DE162F33 /* [CP] Embed Pods Frameworks */,
+				A3BD2A86FBA41ACECE8F2115 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				237158D11EE00FA000BA9384 /* PBXTargetDependency */,
+			);
+			name = CrashLogDemoUITests;
+			productName = CrashLogDemoUITests;
+			productReference = 237158CF1EE00FA000BA9384 /* CrashLogDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		237158A31EE00FA000BA9384 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = RealsCloud;
+				TargetAttributes = {
+					237158AA1EE00FA000BA9384 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8R2322LG8Z;
+						ProvisioningStyle = Automatic;
+					};
+					237158C31EE00FA000BA9384 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8R2322LG8Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 237158AA1EE00FA000BA9384;
+					};
+					237158CE1EE00FA000BA9384 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8R2322LG8Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 237158AA1EE00FA000BA9384;
+					};
+				};
+			};
+			buildConfigurationList = 237158A61EE00FA000BA9384 /* Build configuration list for PBXProject "CrashLogDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 237158A21EE00FA000BA9384;
+			productRefGroup = 237158AC1EE00FA000BA9384 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				237158AA1EE00FA000BA9384 /* CrashLogDemo */,
+				237158C31EE00FA000BA9384 /* CrashLogDemoTests */,
+				237158CE1EE00FA000BA9384 /* CrashLogDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		237158A91EE00FA000BA9384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237158BE1EE00FA000BA9384 /* LaunchScreen.storyboard in Resources */,
+				237158BB1EE00FA000BA9384 /* Assets.xcassets in Resources */,
+				237158B91EE00FA000BA9384 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237158C21EE00FA000BA9384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237158CD1EE00FA000BA9384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18F10EA27909985A8FC35CFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		452250AC9E365640791BFD7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D0E455AC6E0D7A4DE162F33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrashLogDemoUITests/Pods-CrashLogDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C49F863CEB0C782C9C1D63E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrashLogDemoTests/Pods-CrashLogDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9650FDD08957F7466FB40E18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrashLogDemoTests/Pods-CrashLogDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BED0898EE6E0F6A2798BBF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3BD2A86FBA41ACECE8F2115 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrashLogDemoUITests/Pods-CrashLogDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2CAA6F2F521CDF6CCC5D321 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrashLogDemo/Pods-CrashLogDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD99F61EFD820DB6772D859B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrashLogDemo/Pods-CrashLogDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		237158A71EE00FA000BA9384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237159031EE0100700BA9384 /* RSCrashLogViewController.m in Sources */,
+				237159081EE0100700BA9384 /* RSCrashWindow.m in Sources */,
+				237159041EE0100700BA9384 /* RSCrashProfiler.m in Sources */,
+				237159061EE0100700BA9384 /* RSCrashShowViewController.m in Sources */,
+				237158FD1EE0100700BA9384 /* RSBaseViewController.m in Sources */,
+				237158B61EE00FA000BA9384 /* ViewController.m in Sources */,
+				237159021EE0100700BA9384 /* RSCrashLogTimeViewController.m in Sources */,
+				237159091EE0100700BA9384 /* RSTableModel.m in Sources */,
+				237159011EE0100700BA9384 /* RSCrashDB.m in Sources */,
+				237159001EE0100700BA9384 /* RSCrashContainerViewController.m in Sources */,
+				237159071EE0100700BA9384 /* RSCrashStorage.m in Sources */,
+				237158B31EE00FA000BA9384 /* AppDelegate.m in Sources */,
+				237158B01EE00FA000BA9384 /* main.m in Sources */,
+				237158FF1EE0100700BA9384 /* RSCrashCollector.m in Sources */,
+				237159051EE0100700BA9384 /* RSCrashRead.m in Sources */,
+				237158FE1EE0100700BA9384 /* RSCrashClickViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237158C01EE00FA000BA9384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237158C91EE00FA000BA9384 /* CrashLogDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237158CB1EE00FA000BA9384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237158D41EE00FA000BA9384 /* CrashLogDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		237158C61EE00FA000BA9384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 237158AA1EE00FA000BA9384 /* CrashLogDemo */;
+			targetProxy = 237158C51EE00FA000BA9384 /* PBXContainerItemProxy */;
+		};
+		237158D11EE00FA000BA9384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 237158AA1EE00FA000BA9384 /* CrashLogDemo */;
+			targetProxy = 237158D01EE00FA000BA9384 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		237158B71EE00FA000BA9384 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				237158B81EE00FA000BA9384 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		237158BC1EE00FA000BA9384 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				237158BD1EE00FA000BA9384 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		237158D61EE00FA000BA9384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		237158D71EE00FA000BA9384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		237158D91EE00FA000BA9384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DBE7D6950BB92599D1E89A9 /* Pods-CrashLogDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8R2322LG8Z;
+				INFOPLIST_FILE = CrashLogDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realscloud.CrashLogDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		237158DA1EE00FA000BA9384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10B9CDEC1C6759C6DD8F6E80 /* Pods-CrashLogDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8R2322LG8Z;
+				INFOPLIST_FILE = CrashLogDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realscloud.CrashLogDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		237158DC1EE00FA000BA9384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0858D48CD5926C02852C2BC /* Pods-CrashLogDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8R2322LG8Z;
+				INFOPLIST_FILE = CrashLogDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realscloud.CrashLogDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrashLogDemo.app/CrashLogDemo";
+			};
+			name = Debug;
+		};
+		237158DD1EE00FA000BA9384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEA3F82CEAA3DAC45FC40820 /* Pods-CrashLogDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8R2322LG8Z;
+				INFOPLIST_FILE = CrashLogDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realscloud.CrashLogDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrashLogDemo.app/CrashLogDemo";
+			};
+			name = Release;
+		};
+		237158DF1EE00FA000BA9384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE10160FEE521B1B357284C /* Pods-CrashLogDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8R2322LG8Z;
+				INFOPLIST_FILE = CrashLogDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realscloud.CrashLogDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CrashLogDemo;
+			};
+			name = Debug;
+		};
+		237158E01EE00FA000BA9384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A5AC5D2735E066B8DEB0107 /* Pods-CrashLogDemoUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8R2322LG8Z;
+				INFOPLIST_FILE = CrashLogDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realscloud.CrashLogDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CrashLogDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		237158A61EE00FA000BA9384 /* Build configuration list for PBXProject "CrashLogDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237158D61EE00FA000BA9384 /* Debug */,
+				237158D71EE00FA000BA9384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		237158D81EE00FA000BA9384 /* Build configuration list for PBXNativeTarget "CrashLogDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237158D91EE00FA000BA9384 /* Debug */,
+				237158DA1EE00FA000BA9384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		237158DB1EE00FA000BA9384 /* Build configuration list for PBXNativeTarget "CrashLogDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237158DC1EE00FA000BA9384 /* Debug */,
+				237158DD1EE00FA000BA9384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		237158DE1EE00FA000BA9384 /* Build configuration list for PBXNativeTarget "CrashLogDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237158DF1EE00FA000BA9384 /* Debug */,
+				237158E01EE00FA000BA9384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 237158A31EE00FA000BA9384 /* Project object */;
+}
