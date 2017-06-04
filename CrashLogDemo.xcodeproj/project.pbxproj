@@ -28,6 +28,7 @@
 		237159071EE0100700BA9384 /* RSCrashStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158F81EE0100700BA9384 /* RSCrashStorage.m */; };
 		237159081EE0100700BA9384 /* RSCrashWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158FA1EE0100700BA9384 /* RSCrashWindow.m */; };
 		237159091EE0100700BA9384 /* RSTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158FC1EE0100700BA9384 /* RSTableModel.m */; };
+		670212A51EE3EA4B003917E8 /* Crasher.mm in Sources */ = {isa = PBXBuildFile; fileRef = 670212A31EE3EA4B003917E8 /* Crasher.mm */; };
 		9BB801EA07C375BBC8ABE8D0 /* libPods-CrashLogDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 054625CDA269D4460E727995 /* libPods-CrashLogDemo.a */; };
 		AABC1EB286D15DC287E59E20 /* libPods-CrashLogDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D01EC289B773754FDD46C5 /* libPods-CrashLogDemoUITests.a */; };
 		B44839073DC5D2738D053F88 /* libPods-CrashLogDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5478FA736C802DB3B6858D4 /* libPods-CrashLogDemoTests.a */; };
@@ -99,6 +100,8 @@
 		237158FB1EE0100700BA9384 /* RSTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTableModel.h; sourceTree = "<group>"; };
 		237158FC1EE0100700BA9384 /* RSTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTableModel.m; sourceTree = "<group>"; };
 		31D01EC289B773754FDD46C5 /* libPods-CrashLogDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashLogDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		670212A31EE3EA4B003917E8 /* Crasher.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Crasher.mm; sourceTree = "<group>"; };
+		670212A41EE3EA4B003917E8 /* Crasher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crasher.h; sourceTree = "<group>"; };
 		AAE10160FEE521B1B357284C /* Pods-CrashLogDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashLogDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrashLogDemoUITests/Pods-CrashLogDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA3F82CEAA3DAC45FC40820 /* Pods-CrashLogDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashLogDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrashLogDemoTests/Pods-CrashLogDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5478FA736C802DB3B6858D4 /* libPods-CrashLogDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashLogDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +176,8 @@
 				237158B21EE00FA000BA9384 /* AppDelegate.m */,
 				237158B41EE00FA000BA9384 /* ViewController.h */,
 				237158B51EE00FA000BA9384 /* ViewController.m */,
+				670212A41EE3EA4B003917E8 /* Crasher.h */,
+				670212A31EE3EA4B003917E8 /* Crasher.mm */,
 				237158B71EE00FA000BA9384 /* Main.storyboard */,
 				237158BA1EE00FA000BA9384 /* Assets.xcassets */,
 				237158BC1EE00FA000BA9384 /* LaunchScreen.storyboard */,
@@ -549,6 +554,7 @@
 				237159011EE0100700BA9384 /* RSCrashDB.m in Sources */,
 				237159001EE0100700BA9384 /* RSCrashContainerViewController.m in Sources */,
 				237159071EE0100700BA9384 /* RSCrashStorage.m in Sources */,
+				670212A51EE3EA4B003917E8 /* Crasher.mm in Sources */,
 				237158B31EE00FA000BA9384 /* AppDelegate.m in Sources */,
 				237158B01EE00FA000BA9384 /* main.m in Sources */,
 				237158FF1EE0100700BA9384 /* RSCrashCollector.m in Sources */,
@@ -799,6 +805,7 @@
 				237158DA1EE00FA000BA9384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		237158DB1EE00FA000BA9384 /* Build configuration list for PBXNativeTarget "CrashLogDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -807,6 +814,7 @@
 				237158DD1EE00FA000BA9384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		237158DE1EE00FA000BA9384 /* Build configuration list for PBXNativeTarget "CrashLogDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -815,6 +823,7 @@
 				237158E01EE00FA000BA9384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

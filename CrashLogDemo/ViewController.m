@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Crasher.h"
 
 @interface ViewController ()
 -(void )log;
