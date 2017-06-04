@@ -14,11 +14,11 @@
 @property (nonatomic, readonly, strong) FMDatabase *db;
 
 
-/** clear table */
+/** 清空表数据 */
 -(void )clearAllTable;
 -(void )clearTableWithName:(NSString *)name;
 
-/** drop table */
+/** 删除表 */
 -(void )dropAllTable;
 -(void )dropTableWithName:(NSString *)name;
 @end

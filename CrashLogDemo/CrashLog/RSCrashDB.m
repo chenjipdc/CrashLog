@@ -30,6 +30,8 @@ static NSString *const _rs_db_path_ = @"/Documents/crash_log.db";
         [self createTable];
         [self alterColumn];
 //        [self dropAllTable];
+        
+        [self autoStorage];
     }
     return self;
 }
@@ -39,10 +41,10 @@ static NSString *const _rs_db_path_ = @"/Documents/crash_log.db";
     [self.db close];
 }
 
-/** 创建表 */
+/** create table */
 -(void )createTable
 {
-    NSString *statements = [NSString stringWithFormat:@"%@%@",[RSLogDateModel sqlCreateTable],[RSLogTimeModel sqlCreateTable]];
+    NSString *statements = [NSString stringWithFormat:@"%@%@%@",[RSLogDateModel sqlCreateTable],[RSLogTimeModel sqlCreateTable],[RSDeviceModel sqlCreateTable]];
     NSLog(@"statememts:%@",statements);
     NSLog(@"get property type:%@",[RSLogDateModel sqlTypeFromPropertyName:@"createDate"]);
     if ([self.db executeStatements:statements])
@@ -55,13 +57,44 @@ static NSString *const _rs_db_path_ = @"/Documents/crash_log.db";
     }
 }
 
-/** 增加列，用于设计表时暂时想不到的列 */
+/** auto storage */
+-(void )autoStorage
+{
+    NSString *sqlExistsDevice = [NSString stringWithFormat:@"SELECT count(*) AS count FROM %@",RSDeviceModel.className];
+    FMResultSet *deviceResult = [self.db executeQuery:sqlExistsDevice];
+    if (deviceResult)
+    {
+        if ([deviceResult next])
+        {
+            int count = [deviceResult intForColumn:@"count"];
+            if (count == 0)
+            {
+                NSString *sqlStoreDevice = [NSString stringWithFormat:@"INSERT INTO %@ (name,model,localizedModel,systemName,systemVersion,uuid,appVersion) VALUES(?,?,?,?,?,?,?)",RSDeviceModel.className];
+                if ([self.db executeUpdate:sqlStoreDevice,RSDeviceModel.name,RSDeviceModel.model,RSDeviceModel.localizedModel,RSDeviceModel.systemName,RSDeviceModel.systemVersion,RSDeviceModel.uuid,RSDeviceModel.appVersion])
+                {
+                    NSLog(@"store device succeed!");
+                }
+                else
+                {
+                    NSLog(@"store device error:%@",[self.db lastErrorMessage]);
+                }
+            }
+        }
+        [deviceResult close];
+    }
+    else
+    {
+        NSLog(@"error sql exists device: %@",[self.db lastErrorMessage]);
+    }
+}
+
+/**  */
 -(void )alterColumn
 {
     
 }
 
-/** 清空表数据 */
+/** clear table */
 -(void )clearAllTable
 {
     
@@ -72,10 +105,10 @@ static NSString *const _rs_db_path_ = @"/Documents/crash_log.db";
     
 }
 
-/** 删除表 */
+/** remove table */
 -(void )dropAllTable
 {
-    if([self.db executeStatements:[NSString stringWithFormat:@"%@%@",[RSLogDateModel sqlDropTable],[RSLogTimeModel sqlDropTable]]])
+    if([self.db executeStatements:[NSString stringWithFormat:@"%@%@%@",[RSLogDateModel sqlDropTable],[RSLogTimeModel sqlDropTable],[RSDeviceModel sqlDropTable]]])
     {
         NSLog(@"drop all table succeed!");
     }

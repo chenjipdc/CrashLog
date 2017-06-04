@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface RSCrashWindow : UIWindow
-/** perform window events, some area need to action */
+/** 用于响应显示窗口的事件 */
 @property (nonatomic, copy) BOOL (^shouldReciveTouchAtPoint)(RSCrashWindow *window,CGPoint point);
 
 @end

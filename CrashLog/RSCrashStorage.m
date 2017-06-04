@@ -61,8 +61,8 @@
         {
             if ([dateResult next])
             {
-                NSString *sqlInsertTime = [NSString stringWithFormat:@"INSERT INTO %@ (createDate, time, crashLog, logDateId, reachabilityStatus) VALUES (?,?,?,?,?);", RSLogTimeModel.className];
-                if ([self.db executeUpdate:sqlInsertTime, [NSDate date], time, text, @([dateResult intForColumn:@"logDateId"]),RSLogTimeModel.reachabilityStatus])
+                NSString *sqlInsertTime = [NSString stringWithFormat:@"INSERT INTO %@ (createDate, time, crashLog, logDateId) VALUES (?,?,?,?)", RSLogTimeModel.className];
+                if ([self.db executeUpdate:sqlInsertTime, [NSDate date], time, text, @([dateResult intForColumn:@"logDateId"])])
                 {
                     NSLog(@"insert time succeed");
                 }

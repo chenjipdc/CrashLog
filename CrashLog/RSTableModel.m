@@ -8,7 +8,6 @@
 
 #import "RSTableModel.h"
 #import <objc/runtime.h>
-#import <UIKit/UIDevice.h>
 
 static NSDictionary<NSString *, NSString *> *_cloumn_name_type_dict_ = nil;
 static NSMutableDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *_type_property_name_set_ = nil;
@@ -104,9 +103,7 @@ static NSMutableDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *
 {
     if (_cloumn_name_type_dict_ == nil)
     {
-        _cloumn_name_type_dict_ = @{@"b":@"INTEGER",
-                                    @"B":@"INTEGER",
-                                    @"i":@"INTEGER",
+        _cloumn_name_type_dict_ = @{@"i":@"INTEGER",
                                     @"I":@"INTEGER",
                                     @"c":@"INTEGER",
                                     @"C":@"INTEGER",
@@ -212,89 +209,5 @@ static NSMutableDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *
 +(NSArray<NSString *> *)attachs
 {
     return @[[NSString stringWithFormat:@"FOREIGN KEY(logDateId) REFERENCES %@(logDateId)",NSStringFromClass(RSLogDateModel.class)]];
-}
-
--(NSString *)reachabilityStatus
-{
-    return [RSLogTimeModel reachabilityStatus];
-}
-
-+(NSString *)reachabilityStatus
-{
-    return @"wifi";
-}
-@end
-
-
-@implementation RSDeviceModel
-
--(NSString *)name
-{
-    return [RSDeviceModel name];
-}
-
--(NSString *)model
-{
-    return [RSDeviceModel model];
-}
-
--(NSString *)localizedModel
-{
-    return [RSDeviceModel localizedModel];
-}
-
--(NSString *)systemName
-{
-    return [RSDeviceModel systemName];
-}
-
--(NSString *)systemVersion
-{
-    return [RSDeviceModel systemVersion];
-}
-
--(NSString *)uuid
-{
-    return [RSDeviceModel uuid];
-}
-
--(NSString *)appVersion
-{
-    return [RSDeviceModel appVersion];
-}
-
-+(NSString *)name
-{
-    return UIDevice.currentDevice.name;
-}
-
-+(NSString *)model
-{
-    return UIDevice.currentDevice.model;
-}
-
-+(NSString *)localizedModel
-{
-    return UIDevice.currentDevice.localizedModel;
-}
-
-+(NSString *)systemName
-{
-    return UIDevice.currentDevice.systemName;
-}
-
-+(NSString *)systemVersion
-{
-    return UIDevice.currentDevice.systemVersion;
-}
-
-+(NSString *)uuid
-{
-    return [[NSUUID UUID] UUIDString];
-}
-
-+(NSString *)appVersion
-{
-    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 }
 @end
