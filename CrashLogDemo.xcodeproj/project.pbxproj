@@ -29,6 +29,7 @@
 		237159081EE0100700BA9384 /* RSCrashWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158FA1EE0100700BA9384 /* RSCrashWindow.m */; };
 		237159091EE0100700BA9384 /* RSTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158FC1EE0100700BA9384 /* RSTableModel.m */; };
 		23C4B9621EE3F81C00E226B3 /* RSCrashDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C4B9611EE3F81C00E226B3 /* RSCrashDeviceViewController.m */; };
+		23C4B9651EE3FE4600E226B3 /* RSCrashDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C4B9641EE3FE4600E226B3 /* RSCrashDelete.m */; };
 		670212A51EE3EA4B003917E8 /* Crasher.mm in Sources */ = {isa = PBXBuildFile; fileRef = 670212A31EE3EA4B003917E8 /* Crasher.mm */; };
 		9BB801EA07C375BBC8ABE8D0 /* libPods-CrashLogDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 054625CDA269D4460E727995 /* libPods-CrashLogDemo.a */; };
 		AABC1EB286D15DC287E59E20 /* libPods-CrashLogDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D01EC289B773754FDD46C5 /* libPods-CrashLogDemoUITests.a */; };
@@ -102,6 +103,8 @@
 		237158FC1EE0100700BA9384 /* RSTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTableModel.m; sourceTree = "<group>"; };
 		23C4B9601EE3F81C00E226B3 /* RSCrashDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashDeviceViewController.h; sourceTree = "<group>"; };
 		23C4B9611EE3F81C00E226B3 /* RSCrashDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashDeviceViewController.m; sourceTree = "<group>"; };
+		23C4B9631EE3FE4600E226B3 /* RSCrashDelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashDelete.h; sourceTree = "<group>"; };
+		23C4B9641EE3FE4600E226B3 /* RSCrashDelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashDelete.m; sourceTree = "<group>"; };
 		31D01EC289B773754FDD46C5 /* libPods-CrashLogDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashLogDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		670212A31EE3EA4B003917E8 /* Crasher.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Crasher.mm; sourceTree = "<group>"; };
 		670212A41EE3EA4B003917E8 /* Crasher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crasher.h; sourceTree = "<group>"; };
@@ -220,32 +223,34 @@
 			isa = PBXGroup;
 			children = (
 				237158E41EE0100700BA9384 /* RSCrash.h */,
+				237158F11EE0100700BA9384 /* RSCrashProfiler.h */,
+				237158F21EE0100700BA9384 /* RSCrashProfiler.m */,
+				237158F91EE0100700BA9384 /* RSCrashWindow.h */,
+				237158FA1EE0100700BA9384 /* RSCrashWindow.m */,
 				237158E21EE0100700BA9384 /* RSBaseViewController.h */,
 				237158E31EE0100700BA9384 /* RSBaseViewController.m */,
 				237158E51EE0100700BA9384 /* RSCrashClickViewController.h */,
 				237158E61EE0100700BA9384 /* RSCrashClickViewController.m */,
-				237158E71EE0100700BA9384 /* RSCrashCollector.h */,
-				237158E81EE0100700BA9384 /* RSCrashCollector.m */,
 				237158E91EE0100700BA9384 /* RSCrashContainerViewController.h */,
 				237158EA1EE0100700BA9384 /* RSCrashContainerViewController.m */,
-				237158EB1EE0100700BA9384 /* RSCrashDB.h */,
-				237158EC1EE0100700BA9384 /* RSCrashDB.m */,
 				237158ED1EE0100700BA9384 /* RSCrashLogTimeViewController.h */,
 				237158EE1EE0100700BA9384 /* RSCrashLogTimeViewController.m */,
 				237158EF1EE0100700BA9384 /* RSCrashLogViewController.h */,
 				237158F01EE0100700BA9384 /* RSCrashLogViewController.m */,
 				23C4B9601EE3F81C00E226B3 /* RSCrashDeviceViewController.h */,
 				23C4B9611EE3F81C00E226B3 /* RSCrashDeviceViewController.m */,
-				237158F11EE0100700BA9384 /* RSCrashProfiler.h */,
-				237158F21EE0100700BA9384 /* RSCrashProfiler.m */,
-				237158F31EE0100700BA9384 /* RSCrashRead.h */,
-				237158F41EE0100700BA9384 /* RSCrashRead.m */,
 				237158F51EE0100700BA9384 /* RSCrashShowViewController.h */,
 				237158F61EE0100700BA9384 /* RSCrashShowViewController.m */,
+				237158E71EE0100700BA9384 /* RSCrashCollector.h */,
+				237158E81EE0100700BA9384 /* RSCrashCollector.m */,
+				237158EB1EE0100700BA9384 /* RSCrashDB.h */,
+				237158EC1EE0100700BA9384 /* RSCrashDB.m */,
+				237158F31EE0100700BA9384 /* RSCrashRead.h */,
+				237158F41EE0100700BA9384 /* RSCrashRead.m */,
 				237158F71EE0100700BA9384 /* RSCrashStorage.h */,
 				237158F81EE0100700BA9384 /* RSCrashStorage.m */,
-				237158F91EE0100700BA9384 /* RSCrashWindow.h */,
-				237158FA1EE0100700BA9384 /* RSCrashWindow.m */,
+				23C4B9631EE3FE4600E226B3 /* RSCrashDelete.h */,
+				23C4B9641EE3FE4600E226B3 /* RSCrashDelete.m */,
 				237158FB1EE0100700BA9384 /* RSTableModel.h */,
 				237158FC1EE0100700BA9384 /* RSTableModel.m */,
 			);
@@ -556,6 +561,7 @@
 				237158B61EE00FA000BA9384 /* ViewController.m in Sources */,
 				237159021EE0100700BA9384 /* RSCrashLogTimeViewController.m in Sources */,
 				237159091EE0100700BA9384 /* RSTableModel.m in Sources */,
+				23C4B9651EE3FE4600E226B3 /* RSCrashDelete.m in Sources */,
 				237159011EE0100700BA9384 /* RSCrashDB.m in Sources */,
 				237159001EE0100700BA9384 /* RSCrashContainerViewController.m in Sources */,
 				237159071EE0100700BA9384 /* RSCrashStorage.m in Sources */,
