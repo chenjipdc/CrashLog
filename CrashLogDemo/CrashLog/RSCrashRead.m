@@ -93,4 +93,34 @@
     }
 }
 
+
+-(void )readDeviceData:(void(^)(RSDeviceModel *deviceModel))deviceData
+{
+    NSString *sqlSelectDevice = [NSString stringWithFormat:@"SELECT *FROM %@",RSDeviceModel.className];
+    FMResultSet *deviceResult = [self.db executeQuery:sqlSelectDevice];
+    if (deviceResult)
+    {
+        RSDeviceModel *device = nil;
+        if ([deviceResult next])
+        {
+            device = [RSDeviceModel new];
+            device.name = [deviceResult objectForColumnName:@"name"];
+            device.model = [deviceResult objectForColumnName:@"model"];
+            device.localizedModel = [deviceResult objectForColumnName:@"localizedModel"];
+            device.systemName = [deviceResult objectForColumnName:@"systemName"];
+            device.systemVersion = [deviceResult objectForColumnName:@"systemVersion"];
+            device.uuid = [deviceResult objectForColumnName:@"uuid"];
+            device.appVersion = [deviceResult objectForColumnName:@"appVersion"];
+        }
+        [deviceResult close];
+        if (deviceData)
+        {
+            deviceData(device);
+        }
+    }
+    else
+    {
+        NSLog(@"select device error:%@",[self.db lastErrorMessage]);
+    }
+}
 @end

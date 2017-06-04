@@ -8,6 +8,7 @@
 
 #import "RSCrashLogViewController.h"
 #import "RSCrashLogTimeViewController.h"
+#import "RSCrashDeviceViewController.h"
 #import "RSCrashRead.h"
 
 @interface RSCrashLogViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -25,6 +26,7 @@
     [super viewDidLoad];
 //    self.navigationController.navigationBarHidden = YES;
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"device" style:UIBarButtonItemStylePlain target:self action:@selector(_showDeviceInfo:)];
     
     // Do any additional setup after loading the view.
     [self _createSubViews];
@@ -59,6 +61,11 @@
         [weakSelf.datas addObjectsFromArray:logDates];
         [weakSelf.tableView reloadData];
     }];
+}
+
+-(void )_showDeviceInfo:(id )sender
+{
+    [self.navigationController pushViewController:[RSCrashDeviceViewController new] animated:YES];
 }
 
 #pragma mark - tableView delegate datasource

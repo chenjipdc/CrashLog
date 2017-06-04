@@ -230,36 +230,43 @@ static NSMutableDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *
 
 -(NSString *)name
 {
+    if (_name) return _name;
     return [RSDeviceModel name];
 }
 
 -(NSString *)model
 {
+    if (_model) return _model;
     return [RSDeviceModel model];
 }
 
 -(NSString *)localizedModel
 {
+    if (_localizedModel) return _localizedModel;
     return [RSDeviceModel localizedModel];
 }
 
 -(NSString *)systemName
 {
+    if (_systemName) return _systemName;
     return [RSDeviceModel systemName];
 }
 
 -(NSString *)systemVersion
 {
+    if (_systemVersion) return _systemVersion;
     return [RSDeviceModel systemVersion];
 }
 
 -(NSString *)uuid
 {
+    if (_uuid) return _uuid;
     return [RSDeviceModel uuid];
 }
 
 -(NSString *)appVersion
 {
+    if (_appVersion) return _appVersion;
     return [RSDeviceModel appVersion];
 }
 

@@ -28,6 +28,7 @@
 		237159071EE0100700BA9384 /* RSCrashStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158F81EE0100700BA9384 /* RSCrashStorage.m */; };
 		237159081EE0100700BA9384 /* RSCrashWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158FA1EE0100700BA9384 /* RSCrashWindow.m */; };
 		237159091EE0100700BA9384 /* RSTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158FC1EE0100700BA9384 /* RSTableModel.m */; };
+		23C4B9621EE3F81C00E226B3 /* RSCrashDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C4B9611EE3F81C00E226B3 /* RSCrashDeviceViewController.m */; };
 		670212A51EE3EA4B003917E8 /* Crasher.mm in Sources */ = {isa = PBXBuildFile; fileRef = 670212A31EE3EA4B003917E8 /* Crasher.mm */; };
 		9BB801EA07C375BBC8ABE8D0 /* libPods-CrashLogDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 054625CDA269D4460E727995 /* libPods-CrashLogDemo.a */; };
 		AABC1EB286D15DC287E59E20 /* libPods-CrashLogDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D01EC289B773754FDD46C5 /* libPods-CrashLogDemoUITests.a */; };
@@ -99,6 +100,8 @@
 		237158FA1EE0100700BA9384 /* RSCrashWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashWindow.m; sourceTree = "<group>"; };
 		237158FB1EE0100700BA9384 /* RSTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTableModel.h; sourceTree = "<group>"; };
 		237158FC1EE0100700BA9384 /* RSTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTableModel.m; sourceTree = "<group>"; };
+		23C4B9601EE3F81C00E226B3 /* RSCrashDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashDeviceViewController.h; sourceTree = "<group>"; };
+		23C4B9611EE3F81C00E226B3 /* RSCrashDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashDeviceViewController.m; sourceTree = "<group>"; };
 		31D01EC289B773754FDD46C5 /* libPods-CrashLogDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashLogDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		670212A31EE3EA4B003917E8 /* Crasher.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Crasher.mm; sourceTree = "<group>"; };
 		670212A41EE3EA4B003917E8 /* Crasher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crasher.h; sourceTree = "<group>"; };
@@ -231,6 +234,8 @@
 				237158EE1EE0100700BA9384 /* RSCrashLogTimeViewController.m */,
 				237158EF1EE0100700BA9384 /* RSCrashLogViewController.h */,
 				237158F01EE0100700BA9384 /* RSCrashLogViewController.m */,
+				23C4B9601EE3F81C00E226B3 /* RSCrashDeviceViewController.h */,
+				23C4B9611EE3F81C00E226B3 /* RSCrashDeviceViewController.m */,
 				237158F11EE0100700BA9384 /* RSCrashProfiler.h */,
 				237158F21EE0100700BA9384 /* RSCrashProfiler.m */,
 				237158F31EE0100700BA9384 /* RSCrashRead.h */,
@@ -556,6 +561,7 @@
 				237159071EE0100700BA9384 /* RSCrashStorage.m in Sources */,
 				670212A51EE3EA4B003917E8 /* Crasher.mm in Sources */,
 				237158B31EE00FA000BA9384 /* AppDelegate.m in Sources */,
+				23C4B9621EE3F81C00E226B3 /* RSCrashDeviceViewController.m in Sources */,
 				237158B01EE00FA000BA9384 /* main.m in Sources */,
 				237158FF1EE0100700BA9384 /* RSCrashCollector.m in Sources */,
 				237159051EE0100700BA9384 /* RSCrashRead.m in Sources */,
