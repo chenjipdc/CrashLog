@@ -15,21 +15,21 @@
 		237158BE1EE00FA000BA9384 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237158BC1EE00FA000BA9384 /* LaunchScreen.storyboard */; };
 		237158C91EE00FA000BA9384 /* CrashLogDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158C81EE00FA000BA9384 /* CrashLogDemoTests.m */; };
 		237158D41EE00FA000BA9384 /* CrashLogDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158D31EE00FA000BA9384 /* CrashLogDemoUITests.m */; };
-		23BB9C271EE54AF600B0C88E /* RSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C091EE54AF600B0C88E /* RSBaseViewController.m */; };
-		23BB9C281EE54AF600B0C88E /* RSCrashClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C0C1EE54AF600B0C88E /* RSCrashClickViewController.m */; };
-		23BB9C291EE54AF600B0C88E /* RSCrashCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C0E1EE54AF600B0C88E /* RSCrashCollector.m */; };
-		23BB9C2A1EE54AF600B0C88E /* RSCrashContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C101EE54AF600B0C88E /* RSCrashContainerViewController.m */; };
-		23BB9C2B1EE54AF600B0C88E /* RSCrashDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C121EE54AF600B0C88E /* RSCrashDB.m */; };
-		23BB9C2C1EE54AF600B0C88E /* RSCrashDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C141EE54AF600B0C88E /* RSCrashDelete.m */; };
-		23BB9C2D1EE54AF600B0C88E /* RSCrashDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C161EE54AF600B0C88E /* RSCrashDeviceViewController.m */; };
-		23BB9C2E1EE54AF600B0C88E /* RSCrashLogTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C181EE54AF600B0C88E /* RSCrashLogTimeViewController.m */; };
-		23BB9C2F1EE54AF600B0C88E /* RSCrashLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C1A1EE54AF600B0C88E /* RSCrashLogViewController.m */; };
-		23BB9C301EE54AF600B0C88E /* RSCrashProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C1C1EE54AF600B0C88E /* RSCrashProfiler.m */; };
-		23BB9C311EE54AF600B0C88E /* RSCrashRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C1E1EE54AF600B0C88E /* RSCrashRead.m */; };
-		23BB9C321EE54AF600B0C88E /* RSCrashShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C201EE54AF600B0C88E /* RSCrashShowViewController.m */; };
-		23BB9C331EE54AF600B0C88E /* RSCrashStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C221EE54AF600B0C88E /* RSCrashStorage.m */; };
-		23BB9C341EE54AF600B0C88E /* RSCrashWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C241EE54AF600B0C88E /* RSCrashWindow.m */; };
-		23BB9C351EE54AF600B0C88E /* RSTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C261EE54AF600B0C88E /* RSTableModel.m */; };
+		23BB9C561EE54B7600B0C88E /* RSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C381EE54B7600B0C88E /* RSBaseViewController.m */; };
+		23BB9C571EE54B7600B0C88E /* RSCrashClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C3B1EE54B7600B0C88E /* RSCrashClickViewController.m */; };
+		23BB9C581EE54B7600B0C88E /* RSCrashCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C3D1EE54B7600B0C88E /* RSCrashCollector.m */; };
+		23BB9C591EE54B7600B0C88E /* RSCrashContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C3F1EE54B7600B0C88E /* RSCrashContainerViewController.m */; };
+		23BB9C5A1EE54B7600B0C88E /* RSCrashDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C411EE54B7600B0C88E /* RSCrashDB.m */; };
+		23BB9C5B1EE54B7600B0C88E /* RSCrashDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C431EE54B7600B0C88E /* RSCrashDelete.m */; };
+		23BB9C5C1EE54B7600B0C88E /* RSCrashDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C451EE54B7600B0C88E /* RSCrashDeviceViewController.m */; };
+		23BB9C5D1EE54B7600B0C88E /* RSCrashLogTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C471EE54B7600B0C88E /* RSCrashLogTimeViewController.m */; };
+		23BB9C5E1EE54B7600B0C88E /* RSCrashLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C491EE54B7600B0C88E /* RSCrashLogViewController.m */; };
+		23BB9C5F1EE54B7600B0C88E /* RSCrashProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C4B1EE54B7600B0C88E /* RSCrashProfiler.m */; };
+		23BB9C601EE54B7600B0C88E /* RSCrashRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C4D1EE54B7600B0C88E /* RSCrashRead.m */; };
+		23BB9C611EE54B7600B0C88E /* RSCrashShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C4F1EE54B7600B0C88E /* RSCrashShowViewController.m */; };
+		23BB9C621EE54B7600B0C88E /* RSCrashStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C511EE54B7600B0C88E /* RSCrashStorage.m */; };
+		23BB9C631EE54B7600B0C88E /* RSCrashWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C531EE54B7600B0C88E /* RSCrashWindow.m */; };
+		23BB9C641EE54B7600B0C88E /* RSTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BB9C551EE54B7600B0C88E /* RSTableModel.m */; };
 		670212A51EE3EA4B003917E8 /* Crasher.mm in Sources */ = {isa = PBXBuildFile; fileRef = 670212A31EE3EA4B003917E8 /* Crasher.mm */; };
 		9BB801EA07C375BBC8ABE8D0 /* libPods-CrashLogDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 054625CDA269D4460E727995 /* libPods-CrashLogDemo.a */; };
 		AABC1EB286D15DC287E59E20 /* libPods-CrashLogDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D01EC289B773754FDD46C5 /* libPods-CrashLogDemoUITests.a */; };
@@ -74,37 +74,37 @@
 		237158CF1EE00FA000BA9384 /* CrashLogDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashLogDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		237158D31EE00FA000BA9384 /* CrashLogDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashLogDemoUITests.m; sourceTree = "<group>"; };
 		237158D51EE00FA000BA9384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23BB9C081EE54AF600B0C88E /* RSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSBaseViewController.h; sourceTree = "<group>"; };
-		23BB9C091EE54AF600B0C88E /* RSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSBaseViewController.m; sourceTree = "<group>"; };
-		23BB9C0A1EE54AF600B0C88E /* RSCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrash.h; sourceTree = "<group>"; };
-		23BB9C0B1EE54AF600B0C88E /* RSCrashClickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashClickViewController.h; sourceTree = "<group>"; };
-		23BB9C0C1EE54AF600B0C88E /* RSCrashClickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashClickViewController.m; sourceTree = "<group>"; };
-		23BB9C0D1EE54AF600B0C88E /* RSCrashCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashCollector.h; sourceTree = "<group>"; };
-		23BB9C0E1EE54AF600B0C88E /* RSCrashCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashCollector.m; sourceTree = "<group>"; };
-		23BB9C0F1EE54AF600B0C88E /* RSCrashContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashContainerViewController.h; sourceTree = "<group>"; };
-		23BB9C101EE54AF600B0C88E /* RSCrashContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashContainerViewController.m; sourceTree = "<group>"; };
-		23BB9C111EE54AF600B0C88E /* RSCrashDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashDB.h; sourceTree = "<group>"; };
-		23BB9C121EE54AF600B0C88E /* RSCrashDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashDB.m; sourceTree = "<group>"; };
-		23BB9C131EE54AF600B0C88E /* RSCrashDelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashDelete.h; sourceTree = "<group>"; };
-		23BB9C141EE54AF600B0C88E /* RSCrashDelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashDelete.m; sourceTree = "<group>"; };
-		23BB9C151EE54AF600B0C88E /* RSCrashDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashDeviceViewController.h; sourceTree = "<group>"; };
-		23BB9C161EE54AF600B0C88E /* RSCrashDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashDeviceViewController.m; sourceTree = "<group>"; };
-		23BB9C171EE54AF600B0C88E /* RSCrashLogTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashLogTimeViewController.h; sourceTree = "<group>"; };
-		23BB9C181EE54AF600B0C88E /* RSCrashLogTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashLogTimeViewController.m; sourceTree = "<group>"; };
-		23BB9C191EE54AF600B0C88E /* RSCrashLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashLogViewController.h; sourceTree = "<group>"; };
-		23BB9C1A1EE54AF600B0C88E /* RSCrashLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashLogViewController.m; sourceTree = "<group>"; };
-		23BB9C1B1EE54AF600B0C88E /* RSCrashProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashProfiler.h; sourceTree = "<group>"; };
-		23BB9C1C1EE54AF600B0C88E /* RSCrashProfiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashProfiler.m; sourceTree = "<group>"; };
-		23BB9C1D1EE54AF600B0C88E /* RSCrashRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashRead.h; sourceTree = "<group>"; };
-		23BB9C1E1EE54AF600B0C88E /* RSCrashRead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashRead.m; sourceTree = "<group>"; };
-		23BB9C1F1EE54AF600B0C88E /* RSCrashShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashShowViewController.h; sourceTree = "<group>"; };
-		23BB9C201EE54AF600B0C88E /* RSCrashShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashShowViewController.m; sourceTree = "<group>"; };
-		23BB9C211EE54AF600B0C88E /* RSCrashStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashStorage.h; sourceTree = "<group>"; };
-		23BB9C221EE54AF600B0C88E /* RSCrashStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashStorage.m; sourceTree = "<group>"; };
-		23BB9C231EE54AF600B0C88E /* RSCrashWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashWindow.h; sourceTree = "<group>"; };
-		23BB9C241EE54AF600B0C88E /* RSCrashWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashWindow.m; sourceTree = "<group>"; };
-		23BB9C251EE54AF600B0C88E /* RSTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTableModel.h; sourceTree = "<group>"; };
-		23BB9C261EE54AF600B0C88E /* RSTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTableModel.m; sourceTree = "<group>"; };
+		23BB9C371EE54B7600B0C88E /* RSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSBaseViewController.h; sourceTree = "<group>"; };
+		23BB9C381EE54B7600B0C88E /* RSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSBaseViewController.m; sourceTree = "<group>"; };
+		23BB9C391EE54B7600B0C88E /* RSCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrash.h; sourceTree = "<group>"; };
+		23BB9C3A1EE54B7600B0C88E /* RSCrashClickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashClickViewController.h; sourceTree = "<group>"; };
+		23BB9C3B1EE54B7600B0C88E /* RSCrashClickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashClickViewController.m; sourceTree = "<group>"; };
+		23BB9C3C1EE54B7600B0C88E /* RSCrashCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashCollector.h; sourceTree = "<group>"; };
+		23BB9C3D1EE54B7600B0C88E /* RSCrashCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashCollector.m; sourceTree = "<group>"; };
+		23BB9C3E1EE54B7600B0C88E /* RSCrashContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashContainerViewController.h; sourceTree = "<group>"; };
+		23BB9C3F1EE54B7600B0C88E /* RSCrashContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashContainerViewController.m; sourceTree = "<group>"; };
+		23BB9C401EE54B7600B0C88E /* RSCrashDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashDB.h; sourceTree = "<group>"; };
+		23BB9C411EE54B7600B0C88E /* RSCrashDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashDB.m; sourceTree = "<group>"; };
+		23BB9C421EE54B7600B0C88E /* RSCrashDelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashDelete.h; sourceTree = "<group>"; };
+		23BB9C431EE54B7600B0C88E /* RSCrashDelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashDelete.m; sourceTree = "<group>"; };
+		23BB9C441EE54B7600B0C88E /* RSCrashDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashDeviceViewController.h; sourceTree = "<group>"; };
+		23BB9C451EE54B7600B0C88E /* RSCrashDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashDeviceViewController.m; sourceTree = "<group>"; };
+		23BB9C461EE54B7600B0C88E /* RSCrashLogTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashLogTimeViewController.h; sourceTree = "<group>"; };
+		23BB9C471EE54B7600B0C88E /* RSCrashLogTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashLogTimeViewController.m; sourceTree = "<group>"; };
+		23BB9C481EE54B7600B0C88E /* RSCrashLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashLogViewController.h; sourceTree = "<group>"; };
+		23BB9C491EE54B7600B0C88E /* RSCrashLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashLogViewController.m; sourceTree = "<group>"; };
+		23BB9C4A1EE54B7600B0C88E /* RSCrashProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashProfiler.h; sourceTree = "<group>"; };
+		23BB9C4B1EE54B7600B0C88E /* RSCrashProfiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashProfiler.m; sourceTree = "<group>"; };
+		23BB9C4C1EE54B7600B0C88E /* RSCrashRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashRead.h; sourceTree = "<group>"; };
+		23BB9C4D1EE54B7600B0C88E /* RSCrashRead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashRead.m; sourceTree = "<group>"; };
+		23BB9C4E1EE54B7600B0C88E /* RSCrashShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashShowViewController.h; sourceTree = "<group>"; };
+		23BB9C4F1EE54B7600B0C88E /* RSCrashShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashShowViewController.m; sourceTree = "<group>"; };
+		23BB9C501EE54B7600B0C88E /* RSCrashStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashStorage.h; sourceTree = "<group>"; };
+		23BB9C511EE54B7600B0C88E /* RSCrashStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashStorage.m; sourceTree = "<group>"; };
+		23BB9C521EE54B7600B0C88E /* RSCrashWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCrashWindow.h; sourceTree = "<group>"; };
+		23BB9C531EE54B7600B0C88E /* RSCrashWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCrashWindow.m; sourceTree = "<group>"; };
+		23BB9C541EE54B7600B0C88E /* RSTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTableModel.h; sourceTree = "<group>"; };
+		23BB9C551EE54B7600B0C88E /* RSTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTableModel.m; sourceTree = "<group>"; };
 		31D01EC289B773754FDD46C5 /* libPods-CrashLogDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashLogDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		670212A31EE3EA4B003917E8 /* Crasher.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Crasher.mm; sourceTree = "<group>"; };
 		670212A41EE3EA4B003917E8 /* Crasher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crasher.h; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		237158AD1EE00FA000BA9384 /* CrashLogDemo */ = {
 			isa = PBXGroup;
 			children = (
-				23BB9C071EE54AF600B0C88E /* CrashLog */,
+				23BB9C361EE54B7600B0C88E /* CrashLog */,
 				237158B11EE00FA000BA9384 /* AppDelegate.h */,
 				237158B21EE00FA000BA9384 /* AppDelegate.m */,
 				237158B41EE00FA000BA9384 /* ViewController.h */,
@@ -219,43 +219,43 @@
 			path = CrashLogDemoUITests;
 			sourceTree = "<group>";
 		};
-		23BB9C071EE54AF600B0C88E /* CrashLog */ = {
+		23BB9C361EE54B7600B0C88E /* CrashLog */ = {
 			isa = PBXGroup;
 			children = (
-				23BB9C081EE54AF600B0C88E /* RSBaseViewController.h */,
-				23BB9C091EE54AF600B0C88E /* RSBaseViewController.m */,
-				23BB9C0A1EE54AF600B0C88E /* RSCrash.h */,
-				23BB9C0B1EE54AF600B0C88E /* RSCrashClickViewController.h */,
-				23BB9C0C1EE54AF600B0C88E /* RSCrashClickViewController.m */,
-				23BB9C0D1EE54AF600B0C88E /* RSCrashCollector.h */,
-				23BB9C0E1EE54AF600B0C88E /* RSCrashCollector.m */,
-				23BB9C0F1EE54AF600B0C88E /* RSCrashContainerViewController.h */,
-				23BB9C101EE54AF600B0C88E /* RSCrashContainerViewController.m */,
-				23BB9C111EE54AF600B0C88E /* RSCrashDB.h */,
-				23BB9C121EE54AF600B0C88E /* RSCrashDB.m */,
-				23BB9C131EE54AF600B0C88E /* RSCrashDelete.h */,
-				23BB9C141EE54AF600B0C88E /* RSCrashDelete.m */,
-				23BB9C151EE54AF600B0C88E /* RSCrashDeviceViewController.h */,
-				23BB9C161EE54AF600B0C88E /* RSCrashDeviceViewController.m */,
-				23BB9C171EE54AF600B0C88E /* RSCrashLogTimeViewController.h */,
-				23BB9C181EE54AF600B0C88E /* RSCrashLogTimeViewController.m */,
-				23BB9C191EE54AF600B0C88E /* RSCrashLogViewController.h */,
-				23BB9C1A1EE54AF600B0C88E /* RSCrashLogViewController.m */,
-				23BB9C1B1EE54AF600B0C88E /* RSCrashProfiler.h */,
-				23BB9C1C1EE54AF600B0C88E /* RSCrashProfiler.m */,
-				23BB9C1D1EE54AF600B0C88E /* RSCrashRead.h */,
-				23BB9C1E1EE54AF600B0C88E /* RSCrashRead.m */,
-				23BB9C1F1EE54AF600B0C88E /* RSCrashShowViewController.h */,
-				23BB9C201EE54AF600B0C88E /* RSCrashShowViewController.m */,
-				23BB9C211EE54AF600B0C88E /* RSCrashStorage.h */,
-				23BB9C221EE54AF600B0C88E /* RSCrashStorage.m */,
-				23BB9C231EE54AF600B0C88E /* RSCrashWindow.h */,
-				23BB9C241EE54AF600B0C88E /* RSCrashWindow.m */,
-				23BB9C251EE54AF600B0C88E /* RSTableModel.h */,
-				23BB9C261EE54AF600B0C88E /* RSTableModel.m */,
+				23BB9C371EE54B7600B0C88E /* RSBaseViewController.h */,
+				23BB9C381EE54B7600B0C88E /* RSBaseViewController.m */,
+				23BB9C391EE54B7600B0C88E /* RSCrash.h */,
+				23BB9C3A1EE54B7600B0C88E /* RSCrashClickViewController.h */,
+				23BB9C3B1EE54B7600B0C88E /* RSCrashClickViewController.m */,
+				23BB9C3C1EE54B7600B0C88E /* RSCrashCollector.h */,
+				23BB9C3D1EE54B7600B0C88E /* RSCrashCollector.m */,
+				23BB9C3E1EE54B7600B0C88E /* RSCrashContainerViewController.h */,
+				23BB9C3F1EE54B7600B0C88E /* RSCrashContainerViewController.m */,
+				23BB9C401EE54B7600B0C88E /* RSCrashDB.h */,
+				23BB9C411EE54B7600B0C88E /* RSCrashDB.m */,
+				23BB9C421EE54B7600B0C88E /* RSCrashDelete.h */,
+				23BB9C431EE54B7600B0C88E /* RSCrashDelete.m */,
+				23BB9C441EE54B7600B0C88E /* RSCrashDeviceViewController.h */,
+				23BB9C451EE54B7600B0C88E /* RSCrashDeviceViewController.m */,
+				23BB9C461EE54B7600B0C88E /* RSCrashLogTimeViewController.h */,
+				23BB9C471EE54B7600B0C88E /* RSCrashLogTimeViewController.m */,
+				23BB9C481EE54B7600B0C88E /* RSCrashLogViewController.h */,
+				23BB9C491EE54B7600B0C88E /* RSCrashLogViewController.m */,
+				23BB9C4A1EE54B7600B0C88E /* RSCrashProfiler.h */,
+				23BB9C4B1EE54B7600B0C88E /* RSCrashProfiler.m */,
+				23BB9C4C1EE54B7600B0C88E /* RSCrashRead.h */,
+				23BB9C4D1EE54B7600B0C88E /* RSCrashRead.m */,
+				23BB9C4E1EE54B7600B0C88E /* RSCrashShowViewController.h */,
+				23BB9C4F1EE54B7600B0C88E /* RSCrashShowViewController.m */,
+				23BB9C501EE54B7600B0C88E /* RSCrashStorage.h */,
+				23BB9C511EE54B7600B0C88E /* RSCrashStorage.m */,
+				23BB9C521EE54B7600B0C88E /* RSCrashWindow.h */,
+				23BB9C531EE54B7600B0C88E /* RSCrashWindow.m */,
+				23BB9C541EE54B7600B0C88E /* RSTableModel.h */,
+				23BB9C551EE54B7600B0C88E /* RSTableModel.m */,
 			);
 			path = CrashLog;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		D5FA30FC7EE8833D2E2056AE /* Pods */ = {
 			isa = PBXGroup;
@@ -553,25 +553,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23BB9C2F1EE54AF600B0C88E /* RSCrashLogViewController.m in Sources */,
-				23BB9C301EE54AF600B0C88E /* RSCrashProfiler.m in Sources */,
+				23BB9C5E1EE54B7600B0C88E /* RSCrashLogViewController.m in Sources */,
+				23BB9C5F1EE54B7600B0C88E /* RSCrashProfiler.m in Sources */,
 				237158B61EE00FA000BA9384 /* ViewController.m in Sources */,
 				670212A51EE3EA4B003917E8 /* Crasher.mm in Sources */,
-				23BB9C271EE54AF600B0C88E /* RSBaseViewController.m in Sources */,
-				23BB9C2C1EE54AF600B0C88E /* RSCrashDelete.m in Sources */,
-				23BB9C291EE54AF600B0C88E /* RSCrashCollector.m in Sources */,
-				23BB9C311EE54AF600B0C88E /* RSCrashRead.m in Sources */,
-				23BB9C351EE54AF600B0C88E /* RSTableModel.m in Sources */,
-				23BB9C2B1EE54AF600B0C88E /* RSCrashDB.m in Sources */,
-				23BB9C2D1EE54AF600B0C88E /* RSCrashDeviceViewController.m in Sources */,
-				23BB9C341EE54AF600B0C88E /* RSCrashWindow.m in Sources */,
-				23BB9C331EE54AF600B0C88E /* RSCrashStorage.m in Sources */,
+				23BB9C561EE54B7600B0C88E /* RSBaseViewController.m in Sources */,
+				23BB9C5B1EE54B7600B0C88E /* RSCrashDelete.m in Sources */,
+				23BB9C581EE54B7600B0C88E /* RSCrashCollector.m in Sources */,
+				23BB9C601EE54B7600B0C88E /* RSCrashRead.m in Sources */,
+				23BB9C641EE54B7600B0C88E /* RSTableModel.m in Sources */,
+				23BB9C5A1EE54B7600B0C88E /* RSCrashDB.m in Sources */,
+				23BB9C5C1EE54B7600B0C88E /* RSCrashDeviceViewController.m in Sources */,
+				23BB9C631EE54B7600B0C88E /* RSCrashWindow.m in Sources */,
+				23BB9C621EE54B7600B0C88E /* RSCrashStorage.m in Sources */,
 				237158B31EE00FA000BA9384 /* AppDelegate.m in Sources */,
-				23BB9C281EE54AF600B0C88E /* RSCrashClickViewController.m in Sources */,
-				23BB9C321EE54AF600B0C88E /* RSCrashShowViewController.m in Sources */,
-				23BB9C2A1EE54AF600B0C88E /* RSCrashContainerViewController.m in Sources */,
+				23BB9C571EE54B7600B0C88E /* RSCrashClickViewController.m in Sources */,
+				23BB9C611EE54B7600B0C88E /* RSCrashShowViewController.m in Sources */,
+				23BB9C591EE54B7600B0C88E /* RSCrashContainerViewController.m in Sources */,
 				237158B01EE00FA000BA9384 /* main.m in Sources */,
-				23BB9C2E1EE54AF600B0C88E /* RSCrashLogTimeViewController.m in Sources */,
+				23BB9C5D1EE54B7600B0C88E /* RSCrashLogTimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
