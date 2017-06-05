@@ -15,6 +15,7 @@
     {
         self.backgroundColor = [UIColor clearColor];
         self.windowLevel = UIWindowLevelStatusBar + 200;
+        [self convertRect:self.frame toWindow:nil];
     }
     return self;
 }

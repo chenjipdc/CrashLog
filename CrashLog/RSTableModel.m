@@ -8,6 +8,7 @@
 
 #import "RSTableModel.h"
 #import <objc/runtime.h>
+#import <UIKit/UIDevice.h>
 
 static NSDictionary<NSString *, NSString *> *_cloumn_name_type_dict_ = nil;
 static NSMutableDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *_type_property_name_set_ = nil;
@@ -103,7 +104,9 @@ static NSMutableDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *
 {
     if (_cloumn_name_type_dict_ == nil)
     {
-        _cloumn_name_type_dict_ = @{@"i":@"INTEGER",
+        _cloumn_name_type_dict_ = @{@"b":@"INTEGER",
+                                    @"B":@"INTEGER",
+                                    @"i":@"INTEGER",
                                     @"I":@"INTEGER",
                                     @"c":@"INTEGER",
                                     @"C":@"INTEGER",
@@ -194,8 +197,7 @@ static NSMutableDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *
 @implementation RSLogDateModel
 +(NSDictionary<NSString *, NSString *> *)mapByColumn
 {
-    return @{@"logDateId":@"INTEGER PRIMARY KEY AUTOINCREMENT",
-             @"date":@"TEXT UNIQUE"};
+    return @{@"logDateId":@"INTEGER PRIMARY KEY AUTOINCREMENT"};
 }
 @end
 
@@ -203,11 +205,103 @@ static NSMutableDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *
 @implementation RSLogTimeModel
 +(NSDictionary<NSString *, NSString *> *)mapByColumn
 {
-    return @{@"logTimeId":@"INTEGER PRIMARY KEY AUTOINCREMENT"};
+    return @{@"logTimeId":@"INTEGER PRIMARY KEY AUTOINCREMENT",
+             @"logDateId":@"INTEGER NOT NULL"};
 }
 
-+(NSArray<NSString *> *)attachs
++(NSArray<NSString *> *)createAttachs
 {
     return @[[NSString stringWithFormat:@"FOREIGN KEY(logDateId) REFERENCES %@(logDateId)",NSStringFromClass(RSLogDateModel.class)]];
+}
+
+-(NSString *)reachabilityStatus
+{
+    return [RSLogTimeModel reachabilityStatus];
+}
+
++(NSString *)reachabilityStatus
+{
+    return @"wifi";
+}
+@end
+
+
+@implementation RSDeviceModel
+
+-(NSString *)name
+{
+    if (_name) return _name;
+    return [RSDeviceModel name];
+}
+
+-(NSString *)model
+{
+    if (_model) return _model;
+    return [RSDeviceModel model];
+}
+
+-(NSString *)localizedModel
+{
+    if (_localizedModel) return _localizedModel;
+    return [RSDeviceModel localizedModel];
+}
+
+-(NSString *)systemName
+{
+    if (_systemName) return _systemName;
+    return [RSDeviceModel systemName];
+}
+
+-(NSString *)systemVersion
+{
+    if (_systemVersion) return _systemVersion;
+    return [RSDeviceModel systemVersion];
+}
+
+-(NSString *)uuid
+{
+    if (_uuid) return _uuid;
+    return [RSDeviceModel uuid];
+}
+
+-(NSString *)appVersion
+{
+    if (_appVersion) return _appVersion;
+    return [RSDeviceModel appVersion];
+}
+
++(NSString *)name
+{
+    return UIDevice.currentDevice.name;
+}
+
++(NSString *)model
+{
+    return UIDevice.currentDevice.model;
+}
+
++(NSString *)localizedModel
+{
+    return UIDevice.currentDevice.localizedModel;
+}
+
++(NSString *)systemName
+{
+    return UIDevice.currentDevice.systemName;
+}
+
++(NSString *)systemVersion
+{
+    return UIDevice.currentDevice.systemVersion;
+}
+
++(NSString *)uuid
+{
+    return [[NSUUID UUID] UUIDString];
+}
+
++(NSString *)appVersion
+{
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 }
 @end

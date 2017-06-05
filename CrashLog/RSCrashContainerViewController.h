@@ -10,9 +10,9 @@
 
 @interface RSCrashContainerViewController : UIViewController
 
-/** 加载controller,frame */
+/** load controller,frame */
 -(void )containerController:(__kindof UIViewController *)controller frame:(CGRect )frame;
 
-/** 移除controller，相当于切换 */
+/** remove controller，the same exchange controller */
 -(void )dismissContainerController;
 @end

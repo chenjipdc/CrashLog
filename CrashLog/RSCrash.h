@@ -9,5 +9,7 @@
 #ifndef RSCrash_h
 #define RSCrash_h
 #import "RSCrashProfiler.h"
+#import "RSCrashDB.h"
+#import "RSCrashCollector.h"
 
 #endif /* RSCrash_h */

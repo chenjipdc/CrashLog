@@ -8,12 +8,14 @@
 
 #import "RSCrashLogViewController.h"
 #import "RSCrashLogTimeViewController.h"
+#import "RSCrashDeviceViewController.h"
 #import "RSCrashRead.h"
+#import "RSCrashDelete.h"
 
 @interface RSCrashLogViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) RSCrashDelete *crashDelete;
 @property (nonatomic, strong) RSCrashRead *crashRead;
-
 @property (nonatomic, strong) NSMutableArray<RSLogDateModel *> *datas;
 
 @end
@@ -25,6 +27,7 @@
     [super viewDidLoad];
 //    self.navigationController.navigationBarHidden = YES;
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"device" style:UIBarButtonItemStylePlain target:self action:@selector(_showDeviceInfo:)];
     
     // Do any additional setup after loading the view.
     [self _createSubViews];
@@ -61,6 +64,20 @@
     }];
 }
 
+-(void )_showDeviceInfo:(id )sender
+{
+    [self.navigationController pushViewController:[RSCrashDeviceViewController new] animated:YES];
+}
+
+-(RSCrashDelete *)crashDelete
+{
+    if (_crashDelete == nil)
+    {
+        _crashDelete = [RSCrashDelete new];
+    }
+    return _crashDelete;
+}
+
 #pragma mark - tableView delegate datasource
 -(NSInteger )numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -70,6 +87,22 @@
 -(NSInteger )tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.datas.count;
+}
+
+- (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    __weak typeof(self) weakSelf = self;
+    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"delete" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        RSLogDateModel *model = weakSelf.datas[indexPath.row];
+        [weakSelf.crashDelete deleteRecordWithLogDateId:model.logDateId state:^(BOOL state) {
+            if (state)
+            {
+                [weakSelf.datas removeObjectAtIndex:indexPath.row];
+                [weakSelf.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+            }
+        }];
+    }];
+    return @[deleteAction];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

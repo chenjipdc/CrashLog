@@ -18,8 +18,8 @@ static CGFloat _click_width_ = 50;
 
 typedef NS_ENUM(NSInteger, RSCrashShowType)
 {
-    RSCrashShowTypeClick,
-    RSCrashShowTypeLog
+    RSCrashShowTypeClick,   //show click button
+    RSCrashShowTypeLog      //show log
 };
 
 @interface RSCrashProfiler()

@@ -11,14 +11,15 @@
 #import <FMDB/FMDB.h>
 
 @interface RSCrashDB : NSObject
+/** db, call init will set this property */
 @property (nonatomic, readonly, strong) FMDatabase *db;
 
 
-/** 清空表数据 */
+/** clear table */
 -(void )clearAllTable;
 -(void )clearTableWithName:(NSString *)name;
 
-/** 删除表 */
+/** drop table */
 -(void )dropAllTable;
 -(void )dropTableWithName:(NSString *)name;
 @end

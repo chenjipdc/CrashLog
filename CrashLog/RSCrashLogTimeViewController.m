@@ -9,10 +9,11 @@
 #import "RSCrashLogTimeViewController.h"
 #import "RSCrashShowViewController.h"
 #import "RSCrashRead.h"
+#import "RSCrashDelete.h"
 
 @interface RSCrashLogTimeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
-
+@property (nonatomic, strong) RSCrashDelete *crashDelete;
 @property (nonatomic, strong) RSCrashRead *crashRead;
 @property (nonatomic, strong) NSMutableArray<RSLogTimeModel *> *datas;
 @end
@@ -23,7 +24,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.dataSource = self;
@@ -55,6 +55,14 @@
     self.tableView.frame = self.view.bounds;
 }
 
+-(RSCrashDelete *)crashDelete
+{
+    if (_crashDelete == nil)
+    {
+        _crashDelete = [RSCrashDelete new];
+    }
+    return _crashDelete;
+}
 
 -(NSInteger )numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -64,6 +72,22 @@
 -(NSInteger )tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.datas.count;
+}
+
+- (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    __weak typeof(self) weakSelf = self;
+    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"delete" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        RSLogTimeModel *model = weakSelf.datas[indexPath.row];
+        [weakSelf.crashDelete deleteRecordWithLogTimeId:model.logTimeId state:^(BOOL state) {
+            if (state)
+            {
+                [weakSelf.datas removeObjectAtIndex:indexPath.row];
+                [weakSelf.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+            }
+        }];
+    }];
+    return @[deleteAction];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

@@ -8,7 +8,7 @@
 
 #import "RSCrashContainerViewController.h"
 
-@interface RSCrashContainerViewController ()
+@interface RSCrashContainerViewController ()<UIGestureRecognizerDelegate>
 @property (nonatomic, strong) __kindof UIViewController *presentController;
 
 @property (nonatomic, strong) UIPanGestureRecognizer *pan;
@@ -57,6 +57,7 @@
     self.presentController = controller;
     self.presentController.view.frame = frame;
     self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(_pan:)];
+    self.pan.delegate = self;
     [self.presentController.view addGestureRecognizer:self.pan];
     
     if ([self.presentController isKindOfClass:[UINavigationController class]])
@@ -169,4 +170,18 @@
     self.presentController.view.frame = newFrame;
 //    _frame = self.presentController.view.frame;
 }
+
+
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+//    NSLog(@"now:%@",gestureRecognizer.view.class);
+//    NSLog(@"other:%@",otherGestureRecognizer.view.class);
+    if ([NSStringFromClass(otherGestureRecognizer.view.class) isEqualToString:@"UITableViewWrapperView"])
+    {
+        return YES;
+    }
+    return NO;
+}
+
 @end
