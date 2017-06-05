@@ -197,8 +197,7 @@ static NSMutableDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *
 @implementation RSLogDateModel
 +(NSDictionary<NSString *, NSString *> *)mapByColumn
 {
-    return @{@"logDateId":@"INTEGER PRIMARY KEY AUTOINCREMENT",
-             @"date":@"TEXT UNIQUE"};
+    return @{@"logDateId":@"INTEGER PRIMARY KEY AUTOINCREMENT"};
 }
 @end
 
@@ -206,10 +205,11 @@ static NSMutableDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *
 @implementation RSLogTimeModel
 +(NSDictionary<NSString *, NSString *> *)mapByColumn
 {
-    return @{@"logTimeId":@"INTEGER PRIMARY KEY AUTOINCREMENT"};
+    return @{@"logTimeId":@"INTEGER PRIMARY KEY AUTOINCREMENT",
+             @"logDateId":@"INTEGER NOT NULL"};
 }
 
-+(NSArray<NSString *> *)attachs
++(NSArray<NSString *> *)createAttachs
 {
     return @[[NSString stringWithFormat:@"FOREIGN KEY(logDateId) REFERENCES %@(logDateId)",NSStringFromClass(RSLogDateModel.class)]];
 }

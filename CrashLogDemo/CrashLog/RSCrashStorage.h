@@ -10,6 +10,11 @@
 
 @interface RSCrashStorage : RSCrashDB
 
--(void )storageWithText:(NSString *)text;
 
+/**
+ storage crash text
+
+ @param text crash text
+ */
+-(void )storageWithText:(NSString *)text;
 @end

@@ -23,22 +23,28 @@
     
     @try
     {
-        NSString *sqlDateDelete = [NSString stringWithFormat:@"DELETE FROM %@ WHERE logDateId=?;",RSLogDateModel.className];
-        NSString *sqlTimeDelete = [NSString stringWithFormat:@"DELETE FROM %@ WHRER logDateId=?;",RSLogTimeModel.className];
-        flag = [self.db executeUpdate:sqlTimeDelete,@(logDateId)];
-        flag = [self.db executeUpdate:sqlDateDelete,@(logDateId)];
+        NSString *sqlDateDelete = [NSString stringWithFormat:@"DELETE FROM %@ WHERE logDateId=%@;",RSLogDateModel.className,@(logDateId)];
+        NSString *sqlTimeDelete = [NSString stringWithFormat:@"DELETE FROM %@ WHERE logDateId=%@;",RSLogTimeModel.className,@(logDateId)];
+        flag = [self.db executeStatements:[NSString stringWithFormat:@"%@%@",sqlDateDelete,sqlTimeDelete]];
+        if (!flag)
+        {
+            NSLog(@"delete logDateId = %@ error:%@",@(logDateId),[self.db lastErrorMessage]);
+        }
     }
     @catch (NSException *exception)
     {
         NSLog(@"delete logDateId = %@ error:%@",@(logDateId),[self.db lastErrorMessage]);
         flag = NO;
-        [self.db rollback];
     }
     @finally
     {
         if (flag)
         {
             flag = [self.db commit];
+        }
+        else
+        {
+            [self.db rollback];
         }
     }
     if (state)
@@ -67,13 +73,16 @@
     {
         NSLog(@"delete logTimeId = %@ error:%@",@(logTimeId),[self.db lastErrorMessage]);
         flag = NO;
-        [self.db rollback];
     }
     @finally
     {
         if (flag)
         {
             flag = [self.db commit];
+        }
+        else
+        {
+            [self.db rollback];
         }
     }
     if (state)

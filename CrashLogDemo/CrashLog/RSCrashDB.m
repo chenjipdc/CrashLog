@@ -91,7 +91,17 @@ static NSString *const _rs_db_path_ = @"/Documents/crash_log.db";
 /**  */
 -(void )alterColumn
 {
-    
+//    NSString *sqlTimeModelAddCrashType = [NSString stringWithFormat:@"ALTER TABLE %@ ADD crashType TEXT",RSLogTimeModel.className];
+    NSString *sqlColumnExists = [NSString stringWithFormat:@"select * from sqlite_master;"];
+    FMResultSet *result = [self.db executeQuery:sqlColumnExists];
+    if ([result next])
+    {
+        NSLog(@"%@",[result columnNameToIndexMap]);
+    }
+    else
+    {
+        NSLog(@"error:%@",[self.db lastErrorMessage]);
+    }
 }
 
 /** clear table */

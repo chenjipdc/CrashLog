@@ -11,6 +11,7 @@
 #import <FMDB/FMDB.h>
 
 @interface RSCrashDB : NSObject
+/** db, call init will set this property */
 @property (nonatomic, readonly, strong) FMDatabase *db;
 
 
