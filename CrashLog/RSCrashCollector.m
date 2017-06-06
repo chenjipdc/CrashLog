@@ -24,6 +24,9 @@ static void exceptionHandel(NSException *exception)
     [RSCrashCollector _logException:exception];
     
     [RSCrashCollector _profileException:exception];
+    
+    NSSetUncaughtExceptionHandler(NULL);
+    [exception raise];
 }
 
 -(instancetype )init
@@ -56,7 +59,7 @@ void stacktrace(int sig, siginfo_t *info, void *context)
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(timeInterval * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         _crash_collector_ = [RSCrashCollector new];
         NSSetUncaughtExceptionHandler(exceptionHandel);
-//        
+        
 //        struct sigaction sigAction;
 //        sigAction.sa_sigaction = stacktrace;
 //        sigAction.sa_flags = SA_SIGINFO;
