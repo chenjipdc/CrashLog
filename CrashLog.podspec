@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CrashLog"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Show the crash log in your app by a float window"
   s.homepage     = "https://github.com/chenjipdc"
   s.license      = { :type => "MIT", :file => "LICENSE" }
