@@ -38,13 +38,28 @@
                 if (num == 0)
                 {
                     NSString *sqlInsertDate = [NSString stringWithFormat:@"INSERT INTO %@ (createDate, date) VALUES (?,?)",RSLogDateModel.className];
-                    if ([self.db executeUpdate:sqlInsertDate, [NSDate date], date])
+                    BOOL flag = NO;
+                    [self.db beginTransaction];
+                    @try
                     {
-                        NSLog(@"insert date succeed!");
+                        flag = [self.db executeUpdate:sqlInsertDate, [NSDate date], date];
                     }
-                    else
+                    @catch(NSException *exception)
                     {
-                        NSLog(@"insert date error:%@",[self.db lastErrorMessage]);
+                        flag = NO;
+                        NSLog(@"error:%@",exception.reason);
+                    }
+                    @finally
+                    {
+                        if (flag)
+                        {
+                            [self.db commit];
+                        }
+                        else
+                        {
+                            NSLog(@"insert date error:%@",[self.db lastErrorMessage]);
+                            [self.db rollback];
+                        }
                     }
                 }
             }
@@ -55,27 +70,30 @@
             NSLog(@"count error:%@",[self.db lastErrorMessage]);
         }
         
-        NSString *sqlSelectDateId = [NSString stringWithFormat:@"SELECT logDateId FROM %@ WHERE date=?",RSLogDateModel.className];
-        FMResultSet *dateResult = [self.db executeQuery:sqlSelectDateId, date];
-        if (dateResult)
+        [self.db beginTransaction];
+        NSString *sqlInsertTimeTable = [NSString stringWithFormat:@"INSERT INTO %@ (createDate, time, crashLog, logDateId, reachabilityStatus) VALUES (?, ?, ?, (SELECT logDateId FROM %@ WHERE date=?), ?);", RSLogTimeModel.className, RSLogDateModel.className];
+        BOOL flag = NO;
+        @try
         {
-            if ([dateResult next])
-            {
-                NSString *sqlInsertTime = [NSString stringWithFormat:@"INSERT INTO %@ (createDate, time, crashLog, logDateId, reachabilityStatus) VALUES (?,?,?,?,?);", RSLogTimeModel.className];
-                if ([self.db executeUpdate:sqlInsertTime, [NSDate date], time, text, @([dateResult intForColumn:@"logDateId"]),RSLogTimeModel.reachabilityStatus])
-                {
-                    NSLog(@"insert time succeed");
-                }
-                else
-                {
-                    NSLog(@"insert time error:%@",[self.db lastErrorMessage]);
-                }
-            }
-            [dateResult close];
+            flag = [self.db executeUpdate:sqlInsertTimeTable, [NSDate date], time, text, date, RSLogTimeModel.reachabilityStatus];
         }
-        else
+        @catch(NSException *exception)
         {
-            NSLog(@"logDateId error:%@",[self.db lastErrorMessage]);
+            flag = NO;
+            NSLog(@"error:%@",exception.reason);
+        }
+        @finally
+        {
+            if (flag)
+            {
+                NSLog(@"insert time succeed");
+                [self.db commit];
+            }
+            else
+            {
+                [self.db rollback];
+                NSLog(@"insert time error:%@",[self.db lastErrorMessage]);
+            }
         }
     }
 }

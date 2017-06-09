@@ -45,8 +45,8 @@ static NSString *const _rs_db_path_ = @"/Documents/crash_log.db";
 -(void )createTable
 {
     NSString *statements = [NSString stringWithFormat:@"%@%@%@",[RSLogDateModel sqlCreateTable],[RSLogTimeModel sqlCreateTable],[RSDeviceModel sqlCreateTable]];
-    NSLog(@"statememts:%@",statements);
-    NSLog(@"get property type:%@",[RSLogDateModel sqlTypeFromPropertyName:@"createDate"]);
+//    NSLog(@"statememts:%@",statements);
+//    NSLog(@"get property type:%@",[RSLogDateModel sqlTypeFromPropertyName:@"createDate"]);
     if ([self.db executeStatements:statements])
     {
         NSLog(@"create succeed!");
@@ -88,20 +88,26 @@ static NSString *const _rs_db_path_ = @"/Documents/crash_log.db";
     }
 }
 
-/**  */
+/** alter column */
 -(void )alterColumn
 {
 //    NSString *sqlTimeModelAddCrashType = [NSString stringWithFormat:@"ALTER TABLE %@ ADD crashType TEXT",RSLogTimeModel.className];
-    NSString *sqlColumnExists = [NSString stringWithFormat:@"select * from sqlite_master;"];
-    FMResultSet *result = [self.db executeQuery:sqlColumnExists];
-    if ([result next])
-    {
-        NSLog(@"%@",[result columnNameToIndexMap]);
-    }
-    else
-    {
-        NSLog(@"error:%@",[self.db lastErrorMessage]);
-    }
+    
+//    NSString *sqlColumnExists = [NSString stringWithFormat:@"select * from %@;",RSLogTimeModel.className];
+//    FMResultSet *result = [self.db executeQuery:sqlColumnExists];
+//    if ([result next])
+//    {
+//        NSLog(@"%@",[result columnNameToIndexMap]);
+//    }
+//    else
+//    {
+//        NSLog(@"error:%@",[self.db lastErrorMessage]);
+//    }
+}
+
+-(void )alterConstrain
+{
+    
 }
 
 /** clear table */

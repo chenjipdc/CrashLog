@@ -209,11 +209,6 @@ static NSMutableDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *
              @"logDateId":@"INTEGER NOT NULL"};
 }
 
-+(NSArray<NSString *> *)createAttachs
-{
-    return @[[NSString stringWithFormat:@"FOREIGN KEY(logDateId) REFERENCES %@(logDateId)",NSStringFromClass(RSLogDateModel.class)]];
-}
-
 -(NSString *)reachabilityStatus
 {
     return [RSLogTimeModel reachabilityStatus];

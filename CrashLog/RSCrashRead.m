@@ -96,7 +96,7 @@
 
 -(void )readDeviceData:(void(^)(RSDeviceModel *deviceModel))deviceData
 {
-    NSString *sqlSelectDevice = [NSString stringWithFormat:@"SELECT *FROM %@",RSDeviceModel.className];
+    NSString *sqlSelectDevice = [NSString stringWithFormat:@"SELECT *FROM %@ LIMIT 1",RSDeviceModel.className];
     FMResultSet *deviceResult = [self.db executeQuery:sqlSelectDevice];
     if (deviceResult)
     {
