@@ -1,6 +1,11 @@
 # CrashLog
 
 ## How to use CrashLog?
+#### install
+```objectivec
+pod 'CrashLog'
+```
+- - -
 #### like this
 ```objectivec
 @interface AppDelegate ()
