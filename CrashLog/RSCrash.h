@@ -11,5 +11,6 @@
 #import "RSCrashProfiler.h"
 #import "RSCrashDB.h"
 #import "RSCrashCollector.h"
+#import "RSCrashConfiguration.h"
 
 #endif /* RSCrash_h */

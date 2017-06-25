@@ -8,6 +8,7 @@
 
 #import "RSCrashDeviceViewController.h"
 #import "RSCrashRead.h"
+#import "RSCrashConfiguration.h"
 
 @interface RSDeviceSplitModel : NSObject
 @property (nonatomic, copy) NSString *name;
@@ -65,6 +66,7 @@
     [arr addObject:[RSDeviceSplitModel deviceSplitModelWithName:@"systemVersion" value:self.deviceModel.systemVersion]];
     [arr addObject:[RSDeviceSplitModel deviceSplitModelWithName:@"uuid" value:self.deviceModel.uuid]];
     [arr addObject:[RSDeviceSplitModel deviceSplitModelWithName:@"appVersion" value:self.deviceModel.appVersion]];
+    [arr addObject:[RSDeviceSplitModel deviceSplitModelWithName:@"connected" value:[RSCrashConfiguration singleConfiguration].url]];
     self.splitDeviceModel = [arr copy];
     [self.tableView reloadData];
 }
