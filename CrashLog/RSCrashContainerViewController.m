@@ -101,13 +101,13 @@
     
     center.x += point.x;
     center.y += point.y;
-    if (center.x - widthCenter < 0)
+    if (center.x - widthCenter + self.edgeLeftOrRight < 0)
     {
-        center.x = widthCenter;
+        center.x = widthCenter - self.edgeLeftOrRight;
     }
-    if (center.x + widthCenter > CGRectGetWidth(self.view.bounds))
+    if (center.x + widthCenter - self.edgeLeftOrRight > CGRectGetWidth(self.view.bounds))
     {
-        center.x = CGRectGetWidth(self.view.bounds) - widthCenter;
+        center.x = CGRectGetWidth(self.view.bounds) - widthCenter + self.edgeLeftOrRight;
     }
     if (center.y - heightCenter < 0)
     {
@@ -118,6 +118,10 @@
         center.y = CGRectGetHeight(self.view.bounds) - heightCenter;
     }
     self.presentController.view.center = center;
+    if (self.moveCallback)
+    {
+        self.moveCallback();
+    }
 //    _frame = self.presentController.view.frame;
     [gesture setTranslation:CGPointZero inView:self.view];
 }

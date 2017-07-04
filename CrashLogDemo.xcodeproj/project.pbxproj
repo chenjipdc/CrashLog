@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2311AEEA1F0BD171001949CF /* RSCrashTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2311AEE91F0BD171001949CF /* RSCrashTimer.m */; };
 		235130FB1EFE429600B1A49A /* RSCrashConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 235130FA1EFE429600B1A49A /* RSCrashConfiguration.m */; };
 		237158B01EE00FA000BA9384 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158AF1EE00FA000BA9384 /* main.m */; };
 		237158B31EE00FA000BA9384 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 237158B21EE00FA000BA9384 /* AppDelegate.m */; };
@@ -59,6 +60,8 @@
 		0A5AC5D2735E066B8DEB0107 /* Pods-CrashLogDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashLogDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrashLogDemoUITests/Pods-CrashLogDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0DBE7D6950BB92599D1E89A9 /* Pods-CrashLogDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashLogDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrashLogDemo/Pods-CrashLogDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		10B9CDEC1C6759C6DD8F6E80 /* Pods-CrashLogDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashLogDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrashLogDemo/Pods-CrashLogDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2311AEE81F0BD171001949CF /* RSCrashTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSCrashTimer.h; sourceTree = "<group>"; };
+		2311AEE91F0BD171001949CF /* RSCrashTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSCrashTimer.m; sourceTree = "<group>"; };
 		235130F91EFE429600B1A49A /* RSCrashConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSCrashConfiguration.h; sourceTree = "<group>"; };
 		235130FA1EFE429600B1A49A /* RSCrashConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSCrashConfiguration.m; sourceTree = "<group>"; };
 		237158AB1EE00FA000BA9384 /* CrashLogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrashLogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,6 +261,8 @@
 				23BB9C531EE54B7600B0C88E /* RSCrashWindow.m */,
 				23BB9C541EE54B7600B0C88E /* RSTableModel.h */,
 				23BB9C551EE54B7600B0C88E /* RSTableModel.m */,
+				2311AEE81F0BD171001949CF /* RSCrashTimer.h */,
+				2311AEE91F0BD171001949CF /* RSCrashTimer.m */,
 			);
 			path = CrashLog;
 			sourceTree = SOURCE_ROOT;
@@ -562,6 +567,7 @@
 				23BB9C5F1EE54B7600B0C88E /* RSCrashProfiler.m in Sources */,
 				237158B61EE00FA000BA9384 /* ViewController.m in Sources */,
 				670212A51EE3EA4B003917E8 /* Crasher.mm in Sources */,
+				2311AEEA1F0BD171001949CF /* RSCrashTimer.m in Sources */,
 				23BB9C561EE54B7600B0C88E /* RSBaseViewController.m in Sources */,
 				23BB9C5B1EE54B7600B0C88E /* RSCrashDelete.m in Sources */,
 				23BB9C581EE54B7600B0C88E /* RSCrashCollector.m in Sources */,

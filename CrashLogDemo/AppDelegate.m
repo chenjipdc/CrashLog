@@ -19,6 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.profiler = [RSCrashProfiler new];
+//    [RSCrashConfiguration singleConfiguration].origin = CGPointMake(200, 200);
+//    [RSCrashConfiguration singleConfiguration].radius = 100;
     [self.profiler startAfter:0];
     return YES;
 }

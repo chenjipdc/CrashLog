@@ -49,7 +49,7 @@ static NSString *const _rs_db_path_ = @"/Documents/crash_log.db";
 //    NSLog(@"get property type:%@",[RSLogDateModel sqlTypeFromPropertyName:@"createDate"]);
     if ([self.db executeStatements:statements])
     {
-        NSLog(@"create succeed!");
+//        NSLog(@"create succeed!");
     }
     else
     {
@@ -72,7 +72,7 @@ static NSString *const _rs_db_path_ = @"/Documents/crash_log.db";
                 NSString *sqlStoreDevice = [NSString stringWithFormat:@"INSERT INTO %@ (name,model,localizedModel,systemName,systemVersion,uuid,appVersion) VALUES(?,?,?,?,?,?,?)",RSDeviceModel.className];
                 if ([self.db executeUpdate:sqlStoreDevice,RSDeviceModel.name,RSDeviceModel.model,RSDeviceModel.localizedModel,RSDeviceModel.systemName,RSDeviceModel.systemVersion,RSDeviceModel.uuid,RSDeviceModel.appVersion])
                 {
-                    NSLog(@"store device succeed!");
+//                    NSLog(@"store device succeed!");
                 }
                 else
                 {
@@ -126,7 +126,7 @@ static NSString *const _rs_db_path_ = @"/Documents/crash_log.db";
 {
     if([self.db executeStatements:[NSString stringWithFormat:@"%@%@%@",[RSLogDateModel sqlDropTable],[RSLogTimeModel sqlDropTable],[RSDeviceModel sqlDropTable]]])
     {
-        NSLog(@"drop all table succeed!");
+//        NSLog(@"drop all table succeed!");
     }
     else
     {

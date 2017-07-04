@@ -15,4 +15,7 @@
 
 /** remove controller，the same exchange controller */
 -(void )dismissContainerController;
+
+@property (nonatomic, assign) CGFloat edgeLeftOrRight;
+@property (nonatomic, copy) void(^moveCallback) ();
 @end

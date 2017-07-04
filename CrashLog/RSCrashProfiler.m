@@ -14,7 +14,8 @@
 #import "RSCrashClickViewController.h"
 #import "RSCrashLogViewController.h"
 
-static CGFloat _click_width_ = 50;
+#import "RSCrashConfiguration.h"
+#import "RSCrashTimer.h"
 
 typedef NS_ENUM(NSInteger, RSCrashShowType)
 {
@@ -32,6 +33,8 @@ typedef NS_ENUM(NSInteger, RSCrashShowType)
 @property (nonatomic, strong) UINavigationController *navController;
 
 @property (nonatomic, assign) RSCrashShowType type;
+
+@property (nonatomic, strong) RSCrashTimer *timer;
 @end
 
 @implementation RSCrashProfiler
@@ -45,6 +48,11 @@ typedef NS_ENUM(NSInteger, RSCrashShowType)
     if (self = [super init])
     {
 //        [self start];
+        __weak typeof(self) weakSelf = self;
+        self.timer = [RSCrashTimer new];
+        self.timer.wakeUpCallback = ^{
+            [weakSelf _moveToSideClickButton];
+        };
     }
     return self;
 }
@@ -99,11 +107,19 @@ typedef NS_ENUM(NSInteger, RSCrashShowType)
 
 -(void )createContainer
 {
+    __weak typeof(self) weakSelf = self;
     self.containerController = [RSCrashContainerViewController new];
+    self.containerController.moveCallback = ^{
+        if (weakSelf.type == RSCrashShowTypeClick)
+        {
+            [weakSelf.timer resumeDefault];
+        }
+    };
+    
+    //window
     self.Window = [[RSCrashWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.Window.hidden = NO;
     self.Window.rootViewController = self.containerController;
-    __weak typeof(self) weakSelf = self;
     self.Window.shouldReciveTouchAtPoint = ^BOOL(RSCrashWindow *window, CGPoint point) {
         switch (weakSelf.type)
         {
@@ -136,29 +152,57 @@ typedef NS_ENUM(NSInteger, RSCrashShowType)
         }
     }
     [self.containerController dismissContainerController];
+    
+    CGFloat diameter = [RSCrashConfiguration singleConfiguration].radius * 2;
+    CGPoint origin = [RSCrashConfiguration singleConfiguration].origin;
+    
     switch (type)
     {
         case RSCrashShowTypeClick:
+            [self.timer resumeDefault];
             if (CGRectEqualToRect(_lastClickFrame, CGRectZero))
             {
-                _lastClickFrame = CGRectMake(100, 100, _click_width_, _click_width_);
+                _lastClickFrame = CGRectMake(origin.x, origin.y, diameter, diameter);
             }
+            self.containerController.edgeLeftOrRight = diameter*0.5;
             [self.containerController containerController:self.clickController frame:_lastClickFrame];
             break;
         case RSCrashShowTypeLog:
+            [self.timer resumeForever];
             if (CGRectEqualToRect(_lastLogFrame, CGRectZero))
             {
                 _lastLogFrame = CGRectMake(100, 100, 200, 300);
             }
+            self.containerController.edgeLeftOrRight = 0;
             [self.containerController containerController:self.navController frame:_lastLogFrame];
             break;
         default:
+            [self.timer resumeDefault];
             if (CGRectEqualToRect(_lastClickFrame, CGRectZero))
             {
-                _lastClickFrame = CGRectMake(100, 100, _click_width_, _click_width_);
+                _lastClickFrame = CGRectMake(origin.x, origin.y, diameter, diameter);
             }
+            self.containerController.edgeLeftOrRight = diameter*0.5;
             [self.containerController containerController:self.clickController frame:_lastClickFrame];
             break;
     }
+}
+
+-(void )_moveToSideClickButton
+{
+    CGPoint center = self.clickController.view.center;
+    CGRect rect = [UIScreen mainScreen].bounds;
+    if (center.x > 0.5 && center.x <= CGRectGetMidX(rect))
+    {
+        center.x = 0;
+    }
+    else if (center.x > CGRectGetMidX(rect) && center.x <= CGRectGetWidth(rect)-0.5)
+    {
+        center.x = CGRectGetWidth([UIScreen mainScreen].bounds)-0.5;
+    }
+    [self.timer resumeDefault];
+    [UIView animateWithDuration:0.5 animations:^{
+        self.clickController.view.center = center;
+    }];
 }
 @end

@@ -86,7 +86,7 @@
         {
             if (flag)
             {
-                NSLog(@"insert time succeed");
+//                NSLog(@"insert time succeed");
                 [self.db commit];
             }
             else
