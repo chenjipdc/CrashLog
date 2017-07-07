@@ -20,14 +20,7 @@
 {
     if (self = [super init])
     {
-        __weak typeof(self) weakSelf = self;
-        self.timer = [NSTimer timerWithTimeInterval:0.5 repeats:YES block:^(NSTimer * _Nonnull timer) {
-            weakSelf.resume = NO;
-            if (weakSelf.wakeUpCallback)
-            {
-                weakSelf.wakeUpCallback();
-            }
-        }];
+        self.timer = [NSTimer timerWithTimeInterval:0.5 target:self selector:@selector(timerRun:) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
         [self resumeDefault];
     }
@@ -38,6 +31,15 @@
 {
     [self.timer invalidate];
     self.timer = nil;
+}
+
+-(void )timerRun:(NSTimer *)timer
+{
+    self.resume = NO;
+    if (self.wakeUpCallback)
+    {
+        self.wakeUpCallback();
+    }
 }
 
 -(void )resumeDefault
