@@ -22,7 +22,6 @@
     {
         __weak typeof(self) weakSelf = self;
         self.timer = [NSTimer timerWithTimeInterval:0.5 repeats:YES block:^(NSTimer * _Nonnull timer) {
-            NSLog(@"123456789");
             weakSelf.resume = NO;
             if (weakSelf.wakeUpCallback)
             {
